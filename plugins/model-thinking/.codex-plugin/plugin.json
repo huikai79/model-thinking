@@ -1,0 +1,19 @@
+{
+  "name": "model-thinking",
+  "version": "0.1.0",
+  "description": "從不同角度看問題，找出容易漏掉的選項與會改變判斷的資訊。",
+  "author": {
+    "name": "kcchien"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Model Thinking",
+    "shortDescription": "同一個問題，多幾種看法。",
+    "longDescription": "比較不同解釋、選項與適用條件。可直接分析你的情境、套用指定的 mental model，或用工作與生活例子學習一個觀念。獨立整理，與所引用作者及出版者沒有隸屬或背書關係。",
+    "developerName": "kcchien",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": ["請用 model-thinking 幫我找出這個決定還有哪些選項。", "請用 model-thinking 檢查這個計畫可能漏掉的後續影響。"],
+    "brandColor": "#0A1628"
+  }
+}
