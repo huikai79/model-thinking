@@ -1,132 +1,39 @@
 ---
 name: model-thinking
-description: Mental models toolkit for clearer thinking, better decisions, and problem-solving. Use when users face complex problems, need decision support, want to analyze situations from multiple angles, organize information, understand systems, predict outcomes, or learn about specific mental models. Triggers include phrases like "help me think through", "analyze this problem", "what models apply here", "how should I decide", "evaluate options", or direct model references (e.g., "use second-order thinking", "apply inversion"). 中文觸發：「思維模型」、「幫我分析」、「決策分析」、「多角度思考」、「怎麼判斷」、「幫我想清楚」、「系統思考」、「風險評估」。
+description: 拓展問題的解釋、選項與跨域類比。當使用者想多角度思考、跳出既有解法、比較決策，或指定使用／學習某個 mental model 時使用。Use for alternative explanations, options, cross-domain analogies, or applying and learning a named mental model.
 ---
 
 # Model Thinking
 
-## Response Modes
+增加有用觀點，再檢查哪些觀點站得住腳。回答跟隨使用者語言，保留必要的原文術語；本手冊使用繁體中文。
 
-| Mode | Trigger | Output |
-|------|---------|--------|
-| **Guided** | Ambiguous problem | Diagnostic questions → model recommendations |
-| **Direct** | Clear problem or specific model requested | Structured multi-model analysis |
-| **Teaching** | Wants to learn models | Model explanation + example + practice |
+## 做法
 
-## Workflow
+1. 先說目前最有用的洞見或暫定判斷。資訊不足時，用已知資訊提出條件式分析，再問會改變結論的缺口；不先發一串問卷。
+2. 選能改變解釋、選項、取捨或下一步的工具；只讀相關參考檔。沒有模型比直接回答更有幫助時，就直接回答。使用者指定模型時先回應指定用途；若不適用，說明缺哪個條件，提供可用的替代角度。
+3. 對每個觀點說清楚「它多看見了什麼」及成立條件。跨域類比要對應機制、指出差異；相似故事只產生假說，不證明因果。比較模型依實際定義，不為凸顯互補而替另一模型加上不存在的限制。只有新增實質觀點才增加模型，沒有數量配額。
+4. 把使用者提供的事實、推論與明示假設分開。示範數字標為假設；使用者提供的估計也保留估計身分。各方案以同等標準檢查成本、工時、效果與持續性，缺值保留未知；人物特質、動機或原因亦同。先修正錯誤前提，再分析。多個框架同意可能只是共用假設或資料；檢查獨立證據後才調整信心，不以模型投票。
+5. 需要決策時，收斂到有條件的判斷、最可能推翻它的資訊，以及可執行的下一步。探索或教學則依使用者指定的成果收尾，不強迫作決定。未能查證的關鍵事實寫成「待查：內容／需要的來源」，不暗示已查核；本 skill 不要求網路、特定工具或其他 skill。
 
-1. **Classify**: Decision? System? Strategy? Data? Learning?
-2. **Select mode**: Ambiguous → Guided | Clear → Direct | Learning → Teaching
-3. **Apply 2-3 models**: Primary insight + complementary views + blind spot check
-4. **Deliver**: Key insights → Recommendations → Caveats
+## 深度與教學
 
-## Reference File Selection
+低風險、簡單問題以短答完成。使用者明確要求深入探索時，展開替代解釋、相互取捨與反例；以新增資訊控制篇幅，不為簡短犧牲探索。
 
-| Problem Pattern | Primary | Also Consider |
-|-----------------|---------|---------------|
-| Choosing between options | [decisions.md](references/decisions.md) | economics.md, psychology.md |
-| Understanding complex behavior | [systems.md](references/systems.md) | networks.md |
-| Interpreting data, prediction | [statistics.md](references/statistics.md) | algorithms.md, risk.md |
-| Competition, negotiation | [strategy.md](references/strategy.md) | psychology.md, economics.md |
-| Human behavior, bias | [psychology.md](references/psychology.md) | economics.md |
-| Connections, influence, platforms | [networks.md](references/networks.md) | economics.md, systems.md |
-| Computational problem-solving | [algorithms.md](references/algorithms.md) | statistics.md |
-| Uncertainty, tail events | [risk.md](references/risk.md) | statistics.md, psychology.md |
-| Acquiring knowledge, skills | [learning.md](references/learning.md) | psychology.md |
-| Markets, incentives | [economics.md](references/economics.md) | psychology.md, strategy.md |
-| Cross-domain synthesis, model pairing | [combinations.md](references/combinations.md) | All domain files as needed |
+想學指定模型時：解釋核心概念 → 一個明示假設的例子 → 適用條件與常見誤用 → 可選的練習題。區分正式模型、實證發現與啟發法；不要把實用口訣教成普遍定律。
 
-## Guided Mode: Diagnostic Questions
+## 按需參考
 
-When problem is ambiguous, ask 2-3 from relevant domain:
-
-| Domain | Key Questions |
-|--------|---------------|
-| Decisions | Reversibility? (能不能反悔？) Time horizon? (影響多久？) Stakes? (賭注多大？) Stakeholders? (誰會受影響？) |
-| Systems | Linear/non-linear? (結果跟投入成正比嗎？) Feedback loops? (有沒有自我強化或抑制的循環？) Delays? (行動到看見結果要多久？) Boundary? (問題的邊界畫在哪？) |
-| Strategy | Players? (有哪些參與者？) Game type? (零和還是共贏？) Info asymmetries? (誰知道得比較多？) Incentives? (各方動機是什麼？) |
-| Data | Sample size? (資料量夠嗎？) Base rate? (一般情況下機率多少？) Selection bias? (取樣有偏差嗎？) Signal vs noise? (訊號還是雜訊？) |
-| Risk | Fat tail or thin tail? (極端事件常見嗎？) Reversible? (損害能恢復嗎？) Ruin possible? (有沒有全軍覆沒的可能？) |
-
-## Direct Application Template
-
-When applying models directly:
-
-```markdown
-## Analysis: [Problem Summary]
-
-### Model Applied: [Model Name]
-**Core Insight**: [One-sentence key takeaway]
-
-**Application**:
-[2-4 bullet points applying the model to the specific situation]
-
-### Complementary View: [Second Model]
-[Brief application showing different angle]
-
-### Synthesis
-- **Recommendation**: [Specific action]
-- **Key Risk**: [What could go wrong]
-- **Next Step**: [Immediate action to take]
-```
-
-## Teaching Mode Template
-
-```markdown
-## [Model Name]
-**One-liner**: [Memorable summary]
-
-**Core Concept**: [2-3 sentences]
-
-**Example**: [Concrete scenario]
-
-**When to Use**: [Situations]
-
-**Common Mistake**: [Key pitfall to avoid]
-
-**Practice Prompt**: [A question for the user to apply this model to their own situation]
-```
-
-## Multi-Model Synthesis Example
-
-**Problem**: Should I accept this job offer?
-
-| Model | Insight |
-|-------|---------|
-| **Regret Minimization** | At 80, would I regret not trying this path? |
-| **Opportunity Cost** | What salary/growth/learning am I giving up? |
-| **Reversibility** | One-way door or can I return to current field? |
-| **Second-Order** | How does this affect family, health, skills in 5 years? |
-
-**Synthesis**: High regret potential + acceptable opportunity cost + reversible → **Accept**
-
-Use 2-3 models from different domains to triangulate. Agreement = confidence. Disagreement = complexity worth exploring.
-
-## Critical Checks
-
-Before finalizing any analysis:
-
-1. **Inversion**: What would make this analysis wrong?
-2. **Base Rate**: What typically happens in similar situations?
-3. **Incentives**: Who benefits from each outcome?
-4. **Second-Order Effects**: What happens next after the first-order effect?
-5. **Falsifiability**: How would we know if we're wrong?
-
-## Quick Reference: 10 Universal Models
-
-> Detailed explanations and application examples for each model are in the reference files listed in the [Reference File Selection](#reference-file-selection) table above.
-
-| Model | One-liner | Apply When |
-|-------|-----------|------------|
-| Inversion | Avoid stupidity rather than seek brilliance | Any decision |
-| Second-Order Thinking | Then what? | Evaluating consequences |
-| Opportunity Cost | What are you giving up? | Resource allocation |
-| Base Rates | Prior probability matters | Any prediction |
-| Feedback Loops | Effects become causes | System analysis |
-| Margin of Safety | Build in buffers | Risk management |
-| Incentives | Show me incentive, I show you outcome | Analyzing behavior |
-| Map vs Territory | The model isn't reality | Any model use |
-| Sunk Cost | Past costs are irrelevant | Decision-making |
-| Explore/Exploit | Balance new vs known | Resource allocation |
-
-For all models organized by domain, load reference files above. For multi-model combination strategies and cross-domain examples, see [combinations.md](references/combinations.md).
+| 要解決的問題 | 讀取 |
+|---|---|
+| 選擇、可逆性、價值衝突 | [決策](references/decisions.md) |
+| 反覆失敗、回饋、延遲與限制 | [系統](references/systems.md) |
+| 機率、預測與資料解讀 | [統計](references/statistics.md) |
+| 競爭、合作與談判 | [策略](references/strategy.md) |
+| 判斷偏誤與人際解釋 | [心理](references/psychology.md) |
+| 連結、擴散與平台 | [網路](references/networks.md) |
+| 搜尋、排程與最佳化 | [演算法](references/algorithms.md) |
+| 不確定性、損失與承受能力 | [風險](references/risk.md) |
+| 練習、記憶與知識遷移 | [學習](references/learning.md) |
+| 資源配置、市場與誘因 | [經濟](references/economics.md) |
+| 需要組合觀點或跨域類比 | [組合示例](references/combinations.md) |
+| 查來源、舊名稱或修訂取捨 | [來源與逐項紀錄](references/sources.md) |

@@ -1,201 +1,84 @@
-# Network Models
+# 網路參考
 
-Mental models for understanding connections, influence, and contagion.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Network Structure](#network-structure)
-- [Network Dynamics](#network-dynamics)
-- [Influence & Contagion](#influence--contagion)
-- [Platform & Ecosystem](#platform--ecosystem)
+<a id="card-1"></a>
+## 網路結構：Nodes、Edges、Density、Degree、Hubs、Clustering
 
----
+**性質：正式。** 先定義節點、邊、方向、權重與觀察窗，再測量密度、度數分布及局部群聚；分析關鍵節點失效影響。
 
-## Network Structure
+**適用限制：** 高度數不等於影響力或中介性；密集不必然較快或脆弱。分布須檢驗，不能預設社群追蹤數呈冪次律。
 
-### 1. Nodes and Edges
-**Principle**: Networks consist of entities (nodes) and connections (edges).
-- Nodes: people, companies, websites, cells
-- Edges: relationships, links, interactions
-- Directed vs undirected edges
-- **Example**: Social network (people + friendships)
+來源／查核狀態：[NETWORK](sources.md#network)。
 
-### 2. Network Density
-**Principle**: How connected is the network?
-- Dense: most possible connections exist
-- Sparse: few connections relative to possible
-- Trade-off: dense = faster spread, redundancy; sparse = efficiency
-- **Example**: Tight-knit community vs loose acquaintance network
+<a id="card-6"></a>
+## 橋接、結構洞與弱連結
 
-### 3. Degree Distribution
-**Principle**: How are connections distributed across nodes?
-- Normal distribution: most nodes have similar connections
-- Power law: few nodes have many connections (hubs)
-- **Example**: Twitter followers follow power law (few mega-influencers)
+**性質：實證。** Bridges／Structural Holes 找非重複資訊路徑；Strong／Weak Ties 分開信任、支持與資訊新穎性。
 
-### 4. Hub Nodes
-**Principle**: Highly connected nodes that link many others.
-- Disproportionate influence on network function
-- Attack hubs to disrupt network
-- **Example**: Major airports, influential people, key routers
+**適用限制：** 弱連結不必然跨群、強連結不必然資訊重複；資訊取得不等於能採用。原始研究的效果不能直接當組織設計公式。
 
-### 5. Network Clustering
-**Principle**: Tendency for connections to form clusters.
-- Friends of friends are likely friends
-- Communities within networks
-- **Example**: Professional networks cluster by industry
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 6. Bridges and Structural Holes (Burt)
-**Principle**: Connections between otherwise disconnected groups.
-- Bridges access non-redundant information
-- Structural holes = gaps that bridges span
-- Brokers who span holes have informational advantage
-- **Example**: Person connecting two departments
+<a id="card-8"></a>
+## Small World、Preferential Attachment
 
-### 7. Strong vs Weak Ties (Granovetter)
-**Principle**: Different tie strengths serve different functions.
-- Strong ties: close friends, frequent contact, emotional support
-- Weak ties: acquaintances, infrequent contact, novel information
-- "Strength of weak ties": jobs found through acquaintances
-- **Example**: Innovation often comes through weak ties
+**性質：正式。** 小世界同時關注高群聚與短路徑；優先連結模型讓新連結偏向既有高連結節點。
 
----
+**適用限制：** 六度不是所有網路常數；成長及連結規則不同，分布也不同，不能據此保證先進入者成功。
 
-## Network Dynamics
+來源／查核狀態：[NETWORK](sources.md#network)。
 
-### 8. Small World Networks
-**Principle**: Most nodes reachable in few steps despite clustering.
-- Six degrees of separation
-- Local clustering + few long-distance ties
-- **Example**: Social networks, neural networks, power grids
+<a id="card-10"></a>
+## Network Effects、Critical Mass 與平台
 
-### 9. Preferential Attachment (Barabási)
-**Principle**: Rich get richer; connected nodes attract more connections.
-- New nodes prefer to connect to already-connected nodes
-- Creates power law degree distribution
-- First mover advantage
-- **Example**: Popular websites get more links
+**性質：正式。** 檢查新增使用者如何改變其他使用者得到的價值；兩側／多側平台分別看各側價值、價格、匹配品質及跨側效果。
 
-### 10. Network Effects
-**Principle**: Value of network increases with number of users.
-- Direct: phone (more people to call)
-- Indirect: platform (more users → more developers → more apps)
-- Positive feedback loop → winner take all
-- **Example**: Social networks, operating systems, payment systems
+**適用限制：** 推薦帶來新客不必然是網路效應；需證明使用者價值隨參與改變。臨界量與 tipping point 要有機制／資料，成長也可能受擁塞、多棲與負效應限制。
 
-### 11. Critical Mass
-**Principle**: Threshold beyond which network becomes self-sustaining.
-- Below: network may collapse
-- Above: growth becomes self-reinforcing
-- **Example**: Fax machines useless until enough people had them
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 12. Tipping Points
-**Principle**: Small changes can trigger large cascading effects.
-- Non-linear transitions
-- System crosses threshold
-- **Example**: Trend going viral, market crash
+<a id="card-13"></a>
+## 連鎖失效與擴散 Cascade Failures、Viral Spread
 
-### 13. Cascade Failures
-**Principle**: Failure propagates through network connections.
-- One node failure → neighbors overload → they fail
-- Dense networks more vulnerable
-- **Example**: Power grid blackouts, financial contagion
+**性質：正式。** 分別描述負載如何轉移造成失效，以及接觸如何產生新採用；用網路與容量資料模擬情境。
 
----
+**適用限制：** 分享數不是有效再生數；去重、易感群體、異質性、競爭與時間會改變擴散。R>1 只在定義與模型成立時支持早期增長。
 
-## Influence & Contagion
+來源／查核狀態：[NETWORK](sources.md#network)。
 
-### 14. Social Contagion
-**Principle**: Behaviors and ideas spread through social connections.
-- Not just diseases: emotions, habits, opinions
-- Influenced by connection strength and exposure frequency
-- **Example**: Obesity, happiness, smoking spread through networks
+<a id="card-14"></a>
+## 社會傳染、資訊瀑布與同溫層
 
-### 15. Information Cascade
-**Principle**: People copy others, ignoring private information.
-- Early adopters' choices influence followers
-- Can lock in suboptimal outcomes
-- **Example**: Restaurant with few customers stays empty
+**性質：正式。** Social Contagion 提出同伴影響假說；Information Cascade 分析觀察他人選擇後是否忽略私人資訊；Echo Chambers 檢查接觸來源與同質選擇。
 
-### 16. Viral Spread
-**Principle**: Content spreads exponentially through sharing.
-- Reproduction number R: average shares per person
-- R > 1: viral growth; R < 1: dies out
-- **Example**: Memes, viral videos, rumors
+**適用限制：** 相連者相似可能由同質性、共同環境或選樣造成；觀察資料不能單憑相關證明肥胖、情緒傳染或政治極化。
 
-### 17. Seeding Strategies
-**Principle**: Where you start spreading matters.
-- Seed influencers: reach through hubs
-- Seed bridges: reach diverse groups
-- Seed clusters: establish beachhead
-- **Example**: Influencer marketing, early adopter programs
+來源／查核狀態：[CONTAGION](sources.md#contagion)。
 
-### 18. Echo Chambers
-**Principle**: Networks amplify existing beliefs through homophily.
-- Connect with similar others
-- Information filtered by community
-- Opposing views not encountered
-- **Example**: Political polarization on social media
+<a id="card-17"></a>
+## 播種與生態系 Seeding、Network Orchestration、Ecosystem Strategy
 
-### 19. Dunbar's Number
-**Principle**: Cognitive limit on stable social relationships (~150).
-- Inner circle: ~5 close friends
-- Sympathy group: ~15
-- Band: ~50
-- Tribe: ~150
-- Beyond 150: institutions and formal structures needed
-- **Example**: Optimal team sizes, organizational design
+**性質：啟發法。** 依想觸及的群體選擇種子、連接者與互補伙伴，明定協作規則及價值分配，再以小規模實驗測效果。
 
----
+**適用限制：** 中心性或網路規模不足以保證影響；伙伴誘因、治理成本與替代路徑可能使方案失效。
 
-## Platform & Ecosystem
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 20. Two-Sided Markets
-**Principle**: Platform connecting two interdependent user groups.
-- Value comes from matching both sides
-- Chicken-and-egg problem
-- Cross-side network effects
-- **Example**: Uber (riders + drivers), Airbnb (guests + hosts)
+<a id="card-19"></a>
+## Dunbar’s Number
 
-### 21. Multi-Sided Platforms
-**Principle**: Platform serving more than two user groups.
-- Each side adds value to others
-- Complex pricing and subsidy decisions
-- **Example**: Operating systems (users + developers + hardware makers)
+**性質：實證。** 可提醒關注維繫關係的時間與認知負擔，以實際協調成本決定管理方式。
 
-### 22. Switching Costs and Lock-In
-**Principle**: Costs that keep users on platform.
-- Data migration, learning curve, social connections
-- Creates moat once established
-- **Example**: Phone number, email address, social graph
+**適用限制：** 不是人類一律只能維持 150 段關係，也非最佳團隊人數；重分析指出估計不確定性，跨物種外推不能給固定上限。
 
-### 23. Disintermediation
-**Principle**: Removing middlemen from value chain.
-- Networks enable direct connections
-- Intermediaries add value or get bypassed
-- **Example**: Artists selling directly to fans
+來源／查核狀態：[DUNBAR](sources.md#dunbar)。
 
-### 24. Network Orchestration
-**Principle**: Coordinating network participants without owning assets.
-- Set rules, provide infrastructure
-- Capture value through position, not ownership
-- **Example**: Apple App Store, Amazon Marketplace
+<a id="card-22"></a>
+## 轉換成本與去中介 Switching Costs、Disintermediation
 
-### 25. Ecosystem Strategy
-**Principle**: Create value through complementary relationships.
-- Platform + complementors + users
-- Grow the pie, capture fair share
-- Cooperation and competition simultaneously (coopetition)
-- **Example**: iPhone + App developers + users
+**性質：正式。** 分別列移轉資料、學習與關係成本，以及中介原本提供的搜尋、信任、支付等功能。
 
----
+**適用限制：** 直接連結不一定降低總成本；移除中介可能只是把工作移給交易雙方，鎖定也不保證獲利。
 
-## Quick Reference: Network Analysis
-
-| Question | Key Models |
-|----------|------------|
-| How do things spread? | Contagion, Cascades, Viral Spread |
-| Where to intervene? | Hubs, Bridges, Seeding Strategies |
-| Why do platforms win? | Network Effects, Critical Mass, Lock-In |
-| How are people connected? | Strong/Weak Ties, Clustering, Small World |
-| What emerges from connections? | Echo Chambers, Cascade Failures, Tipping Points |
-| How to build platforms? | Two-Sided Markets, Ecosystem Strategy |
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。

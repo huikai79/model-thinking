@@ -1,201 +1,75 @@
-# Algorithm Models
+# 演算法參考
 
-Computational approaches to human problems. Based on "Algorithms to Live By" by Brian Christian and Tom Griffiths.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Search & Selection](#search--selection)
-- [Sorting & Organization](#sorting--organization)
-- [Scheduling & Time](#scheduling--time)
-- [Optimization & Adaptation](#optimization--adaptation)
+<a id="card-1"></a>
+## 最佳停止 Optimal Stopping／Secretary Problem
 
----
+**性質：正式。** 經典秘書問題：已知總數 n、隨機順序、只能看相對排名、拒絕不可回頭，目標是最大化選到唯一最佳者的機率。大 n 時先略過約 n/e，再選首個超過此前最佳者；有限 n 門檻需另算。
 
-## Search & Selection
+**適用限制：** 37% 不是適用招聘、伴侶、租屋的普遍最佳比例；可回頭、未知總數、不同效用或搜尋成本會改變解。Look-Then-Leap 僅是相關啟發。
 
-### 1. Optimal Stopping (37% Rule)
-**Principle**: When to stop searching and commit.
-- Explore first 37% of options (without committing)
-- Then commit to first option better than all explored
-- Balances exploration vs exploitation
-- **Applications**: Hiring, dating, apartment hunting
-- **Example**: Interview 37 candidates, then hire first better than all previous
+來源／查核狀態：[FERGUSON](sources.md#ferguson)。
 
-### 2. Look-Then-Leap Rule
-**Principle**: Separate exploration phase from commitment phase.
-- During look phase: gather information, don't commit
-- At threshold: switch to leap mode
-- Never go back to rejected options
-- **Example**: Researching cars for a month, then buying first good deal
+<a id="card-4"></a>
+## Bandit、Explore／Exploit、Gittins Index
 
-### 3. Secretary Problem Variants
-**Principle**: Optimal stopping under different conditions.
-- Known pool size: 37% rule
-- Unknown pool size: different thresholds
-- Can return to candidates: can be more selective
-- Cost of search: stop sooner
-- **Example**: Dating with apps (huge pool) vs small town (limited pool)
+**性質：正式。** 反覆選擇會同時產生收益與資訊；比較試新選項的資訊價值與既有收益。Gittins 定理適用特定獨立、折現且未選取臂狀態不變的 bandit 設定。
 
-### 4. Multi-Armed Bandit
-**Principle**: Balance exploring options vs exploiting best known.
-- Each "arm" has unknown payoff distribution
-- Pull arms to learn and earn
-- Upper Confidence Bound: try uncertain options optimistically
-- **Example**: A/B testing, restaurant choice, career paths
+**適用限制：** 不能把任意新人加分當 Gittins 最優解；非平穩、互相影響、有限期限等需另分析。年齡不決定探索比例。
 
-### 5. Explore/Exploit Trade-off
-**Principle**: When to try new things vs stick with what works.
-- More time remaining → explore more
-- Less time remaining → exploit more
-- Interval value: longer life expectancy = more exploration
-- **Example**: Young: try many careers; Old: deepen expertise
+來源／查核狀態：[FERGUSON](sources.md#ferguson)。
 
-### 6. Gittins Index
-**Principle**: Assign each option a value considering future potential.
-- Higher index = worth exploring
-- Accounts for learning value, not just current estimate
-- **Example**: Giving new restaurants "newcomer bonus" in decisions
+<a id="card-7"></a>
+## Comparison Sorts、Bucket Sort
 
----
+**性質：正式。** 有一致的比較規則時可用 merge sort 等排序；bucket sort 先依鍵值區間分桶，再於桶內排序。
 
-## Sorting & Organization
+**適用限制：** 主觀偏好可能不傳遞；任意分成喜歡／不喜歡只屬分類類比，不自動繼承 bucket sort 的效率。
 
-### 7. Comparison Sorts
-**Principle**: Different sorting strategies for different contexts.
-- **Bubble sort**: Compare adjacent pairs (inefficient but simple)
-- **Merge sort**: Divide, sort halves, merge (efficient, parallelizable)
-- **Quick sort**: Pivot and partition (fast on average)
-- **Example**: Ranking options by comparing pairs
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 8. Bucket Sort
-**Principle**: Group into categories, then sort within.
-- Works when you can categorize
-- Reduces comparison load
-- **Example**: Sort by "definitely yes," "maybe," "no," then rank within
+<a id="card-9"></a>
+## Search Costs、LRU、Noguchi Filing
 
-### 9. Search Costs
-**Principle**: Finding things has a cost that affects optimal organization.
-- Frequently accessed → keep accessible
-- Rarely used → store away
-- Trade-off between filing (organizing) and searching (finding)
-- **Example**: Email folders vs search, file organization
+**性質：啟發法。** 比較整理與找回成本；若近期使用可預測下次需求，可把近期資料放前面。LRU 快取淘汰最久未使用者。
 
-### 10. LRU Cache (Least Recently Used)
-**Principle**: Keep recently used items accessible; discard oldest unused.
-- Assumes recency predicts future use
-- Automatically adapts to usage patterns
-- **Example**: Browser tabs, desk organization, memory management
+**適用限制：** LRU 的效果依存取模式，循環掃描可能使它失效；紙本移到最前不等於最佳分類。本次未核實 Noguchi 原書。
 
-### 11. The Noguchi Filing System
-**Principle**: Put most recent on top; always return to top.
-- Self-organizing by recency
-- No categorization needed
-- Frequently used naturally floats up
-- **Example**: Stack of papers where recent stays accessible
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
----
+<a id="card-12"></a>
+## 排程 EDD、SJF、Weighted SJF
 
-## Scheduling & Time
+**性質：正式。** 單機、全部工作已可開始、無前置相依、處理時間已知時：EDD 按到期日減少最大 lateness；SJF 按工時減少總完成時間；Smith’s rule 按 pᵢ/wᵢ 排序減少加權總完成時間。
 
-### 12. Earliest Due Date
-**Principle**: Minimize maximum lateness by doing earliest deadline first.
-- Optimal when all tasks same length
-- Prevents worst-case delays
-- **Example**: Multiple assignments with deadlines
+**適用限制：** EDD 不要求等長。工作釋出時間、可搶占、相依、多資源、權重非固定時，這些保證可能不成立；產品 WSJF 的延遲成本估計另需檢驗。
 
-### 13. Shortest Job First
-**Principle**: Do quickest tasks first to minimize average wait time.
-- Minimizes total time others wait
-- Doesn't account for importance
-- **Example**: Quick emails before long reports
+來源／查核狀態：[SCHEDULING](sources.md#scheduling)。
 
-### 14. Weighted Shortest Job First
-**Principle**: Factor in importance, not just speed.
-- Weight by importance/urgency
-- High-priority short tasks first
-- **Example**: Balance quick wins with important tasks
+<a id="card-15"></a>
+## 阻塞、批次與切換 Priority Inversion、Coalescing、Thrashing
 
-### 15. Priority Inversion
-**Principle**: Low-priority tasks blocking high-priority ones.
-- Medium priority preempts low, which blocks high
-- Solution: priority inheritance
-- **Example**: Urgent email delayed by low-priority meeting
+**性質：啟發法。** 先畫資源等待鏈；低優先工作持有高優先工作所需資源時可能發生 priority inversion。可批次處理低急迫中斷，限制同時工作量。
 
-### 16. Interrupt Coalescing
-**Principle**: Batch interruptions to reduce context switch costs.
-- Each interruption has overhead
-- Check email once per hour, not continuously
-- **Example**: Scheduled "office hours" instead of open door
+**適用限制：** 不是每個拖延都算優先反轉；批次增加等待，減少並行也可能降低吞吐。人的注意力類比不直接繼承作業系統定理。
 
-### 17. Context Switching Costs
-**Principle**: Changing tasks has hidden overhead.
-- Loading mental context takes time
-- Residue from previous task
-- Minimize switches for deep work
-- **Example**: Programming requires long uninterrupted blocks
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 18. Thrashing
-**Principle**: System spends more time managing than working.
-- Too many tasks → constant switching → nothing gets done
-- Solution: reduce parallel tasks
-- **Example**: Too many browser tabs, too many projects
+<a id="card-19"></a>
+## Gradient Descent、Hill Climbing、Simulated Annealing、Random Restarts
 
----
+**性質：正式。** 有目標函式時，gradient descent 沿負梯度更新；hill climbing 比較鄰近解；annealing 以溫度控制接受較差解的機率；重啟可探索其他起點。
 
-## Optimization & Adaptation
+**適用限制：** 步長、光滑性、凸性、鄰域及退火排程影響保證；隨機不是必較佳，產品改進沒有可量測目標時只可當類比。
 
-### 19. Gradient Descent
-**Principle**: Move in direction of steepest improvement.
-- Local decisions toward better outcomes
-- Can get stuck in local optima
-- **Example**: Iterative product improvement based on feedback
+來源／查核狀態：[BOYD](sources.md#boyd)。
 
-### 20. Simulated Annealing
-**Principle**: Accept worse solutions early to escape local optima.
-- High "temperature" = more randomness, explore widely
-- Low "temperature" = exploit, settle on solution
-- **Example**: Try radical changes early in project, refine later
+<a id="card-23"></a>
+## 約束與鬆弛 Constraint Satisfaction、Relaxation、Lagrangian Relaxation
 
-### 21. Hill Climbing
-**Principle**: Always move to better adjacent state.
-- Simple but can get stuck
-- Good for smooth landscapes
-- **Example**: A/B testing incremental improvements
+**性質：正式。** 先找滿足硬限制的可行解；鬆弛較難限制取得界限或候選解。Lagrangian 將限制乘以乘子加入目標並形成對偶問題，用於界限或求解。
 
-### 22. Randomness in Optimization
-**Principle**: Strategic randomness helps avoid getting stuck.
-- Random restarts
-- Jittering
-- Monte Carlo methods
-- **Example**: Try completely different approach when stuck
+**適用限制：** 鬆弛解可能不可行，最後仍須檢查原限制；Lagrangian 不等於允許任意花錢違反硬限制，強對偶也需條件。
 
-### 23. Relaxation
-**Principle**: Solve easier version of problem, then constrain.
-- Remove constraints to find approximate solution
-- Add constraints back gradually
-- **Example**: Ignore budget first, then adjust
-
-### 24. Constraint Satisfaction
-**Principle**: Find solution meeting all requirements.
-- Propagate constraints to reduce possibilities
-- Backtrack when stuck
-- **Example**: Scheduling that meets everyone's availability
-
-### 25. Lagrangian Relaxation
-**Principle**: Turn constraints into costs.
-- Soft constraints instead of hard
-- Penalty for violation
-- **Example**: "Budget is flexible but expensive to exceed"
-
----
-
-## Quick Reference: Algorithm Selection
-
-| Problem Type | Key Algorithms |
-|--------------|----------------|
-| When to commit | 37% Rule, Look-Then-Leap |
-| Try new vs stay safe | Explore/Exploit, Multi-Armed Bandit |
-| Organize and find | LRU Cache, Bucket Sort |
-| Schedule tasks | Shortest Job, Earliest Due Date |
-| Optimize gradually | Gradient Descent, Hill Climbing |
-| Escape local optima | Simulated Annealing, Random Restarts |
-| Handle too much | Interrupt Coalescing, Reduce Thrashing |
+來源／查核狀態：[BOYD](sources.md#boyd)。

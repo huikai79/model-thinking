@@ -1,204 +1,75 @@
-# Strategy Models
+# 策略參考
 
-Mental models for competition, cooperation, negotiation, and game theory.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Game Theory Foundations](#game-theory-foundations)
-- [Competitive Strategy](#competitive-strategy)
-- [Cooperation & Negotiation](#cooperation--negotiation)
-- [Strategic Positioning](#strategic-positioning)
+<a id="card-1"></a>
+## 賽局、均衡與重複互動
 
----
+**性質：正式。** 先列玩家、行動、資訊及各方效用。Nash 是無人可單方改策略而獲益；Prisoner’s Dilemma 要有背叛占優的報酬結構；Stag Hunt 是合作報酬高但需協調；Chicken 有互不退讓的高代價。
 
-## Game Theory Foundations
+**適用限制：** 現實衝突不自動符合某賽局；零和需各方得失加總為零；總和為固定常數則為常和，可適當平移效用轉成零和。Repeated Games 可能支持合作但不保證，Tit-for-Tat 遇雜訊可能互相報復，不能預設威脅是最佳策略。
 
-### 1. Nash Equilibrium
-**Principle**: State where no player benefits from unilateral change.
-- Each player's strategy is best response to others
-- May not be optimal for anyone
-- **Example**: Both prisoners confess even though both staying silent is better
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 2. Prisoner's Dilemma
-**Principle**: Individual rationality leads to collective irrationality.
-- Cooperation > mutual defection, but defection dominates
-- Changes when repeated (reputation matters)
-- **Example**: Price wars, arms races, environmental degradation
+<a id="card-8"></a>
+## 競爭優勢 Moats、Porter’s Five Forces
 
-### 3. Zero-Sum vs Positive-Sum
-**Principle**: Games where total value is fixed vs expandable.
-- **Zero-sum**: Poker, competitive sports (your win = my loss)
-- **Positive-sum**: Trade, collaboration (both can win)
-- **Example**: Negotiation is often positive-sum (create value, then divide)
+**性質：啟發法。** 檢查同業、進入者、替代品、供應商與買方，再找可維持差異的成本、轉換障礙或資產。
 
-### 4. Repeated Games
-**Principle**: Future interactions change current incentives.
-- Reputation becomes valuable
-- Cooperation can emerge and sustain
-- **Shadow of the future**: longer horizon → more cooperation
-- **Example**: Business relationships vs one-time transactions
+**適用限制：** 框架整理競爭條件，不直接預測獲利；規模或知名度不能單獨證明護城河，優勢也可能流失。
 
-### 5. Tit-for-Tat
-**Principle**: Start cooperative, then mirror opponent's last move.
-- Simple, clear, forgiving
-- Punishes defection but allows recovery
-- **Example**: Trade negotiations, international relations
+來源／查核狀態：[PORTER](sources.md#porter)。
 
-### 6. Chicken Game
-**Principle**: Both want to avoid mutual destruction, but neither wants to swerve first.
-- Commitment helps (remove steering wheel)
-- Brinkmanship is risky
-- **Example**: Labor-management standoffs, government shutdowns
+<a id="card-10"></a>
+## 比較優勢 Comparative Advantage
 
-### 7. Stag Hunt
-**Principle**: Cooperation beats solo action, but requires trust.
-- Hunt stag together > hunt rabbits alone > hunt stag alone (failure)
-- Coordination problem, not incentive problem
-- **Example**: Team projects requiring everyone's commitment
+**性質：正式。** 以機會成本比較分工，主定義在經濟參考。
 
----
+**適用限制：** 「相對更擅長」需具體成本比較；不得用名目時薪替代可實現的替代收益。
 
-## Competitive Strategy
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 8. Moats (Competitive Advantage)
-**Principle**: Sustainable barriers that protect profit.
-- **Network effects**: Value increases with users
-- **Switching costs**: Expensive to leave
-- **Cost advantages**: Economies of scale
-- **Intangibles**: Brand, patents, regulation
-- **Example**: Google's search data network effect
+<a id="card-11"></a>
+## 競爭路線 First-Mover／Fast-Follower、Blue Ocean、Red Queen
 
-### 9. Porter's Five Forces
-**Principle**: Industry profitability depends on five competitive forces.
-1. Rivalry among existing competitors
-2. Threat of new entrants
-3. Threat of substitutes
-4. Bargaining power of suppliers
-5. Bargaining power of buyers
-- **Example**: Airlines (high rivalry, low differentiation) vs luxury goods
+**性質：啟發法。** 比較先進入與等待的學習成本、可占資產及模仿難度；Blue Ocean 探索尚未滿足的需求，Red Queen 提醒競爭者也在變動。
 
-### 10. Relative vs Absolute Advantage
-**Principle**: Compete where you're relatively better, not absolutely best.
-- **Absolute**: Better at everything
-- **Comparative**: Better relative advantage
-- **Example**: Lawyer who types faster still shouldn't do typing
+**適用限制：** 成功企業故事不能證明先行或追隨較好；新市場未必無競爭，持續跟進也未必有收益。
 
-### 11. First-Mover vs Fast-Follower
-**Principle**: Trade-off between pioneering and learning from others.
-- **First-mover**: Define category, capture customers, build moat
-- **Fast-follower**: Learn from pioneer's mistakes, better execution
-- **Example**: MySpace (first) vs Facebook (fast-follower)
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 12. Blue Ocean Strategy
-**Principle**: Create uncontested market space vs compete in bloody red oceans.
-- Combine elements in new ways
-- Target non-customers
-- **Example**: Cirque du Soleil (circus + theater, no animals)
+<a id="card-13"></a>
+## 破壞式創新 Disruptive Innovation
 
-### 13. Disruptive Innovation (Christensen)
-**Principle**: Simpler, cheaper products eventually overtake incumbents.
-- Start in overlooked segments
-- Improve until "good enough" for mainstream
-- Incumbents can't respond (wrong business model)
-- **Example**: Digital cameras disrupting film
+**性質：啟發法。** 依 Christensen 的理論，找低階市場或原本無法消費者的切入點，以及在位者忽略它的商業誘因。
 
-### 14. Red Queen Effect
-**Principle**: Must run just to stay in place.
-- Competitors evolve; standing still means falling behind
-- Continuous improvement required
-- **Example**: Tech companies constantly innovating or dying
+**適用限制：** 不是所有更便宜或取代舊技術的創新都算 disruptive；切入後不保證取代在位者。
 
----
+來源／查核狀態：[DISRUPTION](sources.md#disruption)。
 
-## Cooperation & Negotiation
+<a id="card-15"></a>
+## 談判替代方案 BATNA、ZOPA 與價值交換
 
-### 15. BATNA (Best Alternative To Negotiated Agreement)
-**Principle**: Your leverage depends on your alternatives.
-- Strong BATNA = walk away power
-- Know your BATNA and estimate theirs
-- Improve BATNA before negotiating
-- **Example**: Job offer negotiation with another offer in hand
+**性質：啟發法。** BATNA 是談不成時最好的可行方案；估保留條件並找可能的 ZOPA。多議題談判可利用偏好差異創造交換空間。
 
-### 16. ZOPA (Zone of Possible Agreement)
-**Principle**: Range where deal is possible.
-- Between seller's minimum and buyer's maximum
-- No ZOPA = no deal possible
-- **Example**: Seller needs $100K minimum, buyer pays max $120K → ZOPA = $100K-$120K
+**適用限制：** 對方底線是待查資訊；單一價格沒有重疊，不代表改議題也無解。未驗證的替代方案不等於談判籌碼。
 
-### 17. Integrative vs Distributive Bargaining
-**Principle**: Create value before claiming it.
-- **Distributive**: Fixed pie, zero-sum
-- **Integrative**: Expand pie through trade-offs
-- Different priorities = trade opportunity
-- **Example**: Salary vs vacation days vs title trade-offs
+來源／查核狀態：[PON](sources.md#pon)。
 
-### 18. Anchoring in Negotiation
-**Principle**: First number strongly influences final outcome.
-- Make the first offer if you have information
-- Anchor aggressively but credibly
-- Counter anchors with counter-anchors
-- **Example**: List price sets expectation for negotiation
+<a id="card-18"></a>
+## 錨定、承諾一致與互惠
 
-### 19. Commitment and Consistency
-**Principle**: Once committed, people stay consistent.
-- Get small agreements first
-- Public commitments are stronger
-- **Example**: "Do you care about the environment?" before asking for donation
+**性質：實證。** Anchoring 提醒先獨立估價；Commitment and Consistency 檢查先前承諾是否仍合理；Reciprocity 看交換是否自願且對等。
 
-### 20. Reciprocity
-**Principle**: Give first to create obligation.
-- Concessions invite counter-concessions
-- Small gifts create disproportionate obligation
-- **Example**: Free samples, favors before asking
+**適用限制：** 效應依資訊、關係與脈絡而變；第一次出價或小讓步不保證優勢，也不創造對方的義務。
 
----
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-## Strategic Positioning
+<a id="card-21"></a>
+## 協調點、可信承諾、訊號與選擇權
 
-### 21. Schelling Points (Focal Points)
-**Principle**: Natural coordination points when communication limited.
-- "Where would you meet in NYC?" → Grand Central
-- Cultural and contextual
-- **Example**: 50/50 splits as natural default
+**性質：正式。** Schelling Points 找共享顯著選項；Commitment／Precommitment 看承諾如何改變預期；Signaling 問何種行動能區分私有資訊；Option Value 比較彈性與成本。
 
-### 22. Commitment Devices
-**Principle**: Constrain future options to strengthen current position.
-- Remove retreat option
-- Burn bridges, cross Rubicon
-- **Example**: Publicly announcing deadlines
+**適用限制：** 協調點依文化；高成本訊號只有在不同類型成本／利益結構能區分時才有資訊性。不可把花大錢當真實保證。資訊不對稱詳見經濟參考。
 
-### 23. Signaling
-**Principle**: Actions reveal private information.
-- Costly signals more credible
-- Education as signal (not just human capital)
-- **Example**: Money-back guarantees signal quality
-
-### 24. Information Asymmetry
-**Principle**: One party knows more than the other.
-- **Adverse selection**: Hidden information before transaction (used cars)
-- **Moral hazard**: Hidden action after transaction (insurance)
-- **Example**: Job interviews can't fully reveal employee quality
-
-### 25. Option Value in Strategy
-**Principle**: Keep options open; flexibility has value.
-- Don't commit early without good reason
-- Information arrives; optionality lets you use it
-- **Example**: Wait-and-see on technology investments
-
-### 26. Precommitment
-**Principle**: Limit future choices to change others' expectations.
-- Irreversible moves change the game
-- **Example**: Building factory as commitment to enter market
-
----
-
-## Quick Reference: Matching Models to Situations
-
-| Situation | Key Models |
-|-----------|------------|
-| One-time transaction | BATNA, ZOPA, Anchoring |
-| Ongoing relationship | Repeated Games, Tit-for-Tat, Reciprocity |
-| Competitive market | Porter's Five Forces, Moats, Red Queen |
-| Market entry | First-Mover/Fast-Follower, Blue Ocean |
-| Team coordination | Stag Hunt, Schelling Points |
-| Conflict resolution | Positive-Sum thinking, Integrative Bargaining |
-| Signaling credibility | Costly Signals, Commitment Devices |
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。

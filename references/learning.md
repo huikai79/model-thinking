@@ -1,201 +1,93 @@
-# Learning Models
+# 學習參考
 
-Mental models for acquiring knowledge, developing skills, and adapting effectively.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Knowledge Acquisition](#knowledge-acquisition)
-- [Skill Development](#skill-development)
-- [Adaptation & Growth](#adaptation--growth)
-- [Teaching & Transfer](#teaching--transfer)
+<a id="card-1"></a>
+## 能力圈與 T-Shaped Knowledge
 
----
+**性質：啟發法。** 畫出能用成果證明的專長、相鄰知識及需要協助的領域，依實際任務決定擴展或深化。
 
-## Knowledge Acquisition
+**適用限制：** T 形是發展選擇，不是唯一優秀人才結構；領域熟悉也可能高估自己。
 
-### 1. Circle of Competence
-**Principle**: Know the boundaries of your knowledge.
-- Inside circle: deep expertise, can make confident decisions
-- Edge of circle: highest risk of overconfidence errors
-- Outside circle: seek experts or abstain
-- **Example**: Buffett investing only in businesses he understands
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 2. T-Shaped Knowledge
-**Principle**: Deep expertise in one area + breadth across many.
-- Vertical bar: deep specialization
-- Horizontal bar: working knowledge of adjacent fields
-- Enables cross-domain innovation
-- **Example**: Designer who deeply knows UX + understands coding, business, psychology
+<a id="card-3"></a>
+## Spacing Effect、Testing Effect
 
-### 3. Spacing Effect
-**Principle**: Distributed practice beats massed practice.
-- Study over time, not all at once
-- Optimal spacing: review just as you're about to forget
-- **Example**: 4 × 30min sessions > 1 × 2hr session
+**性質：實證。** 把學習分散，安排不看材料的提取練習並給更正回饋；用延後測驗比較是否記住。
 
-### 4. Testing Effect
-**Principle**: Retrieval practice strengthens memory more than re-reading.
-- Struggle to recall = stronger encoding
-- Pretests improve learning even before instruction
-- **Example**: Flashcards, practice questions, self-quizzing
+**適用限制：** 最佳間隔取決於保留期間與材料，不是必須等快忘光；提取失敗需支援，不能只要更吃力就算有效。
 
-### 5. Interleaving
-**Principle**: Mix different topics or problem types during practice.
-- Harder initially, better long-term transfer
-- Forces discrimination between concepts
-- **Example**: Practicing forehand, backhand, serve mixed vs blocked
+來源／查核狀態：[SPACING](sources.md#spacing)、[RETRIEVAL](sources.md#retrieval)。
 
-### 6. Elaboration
-**Principle**: Connect new information to existing knowledge.
-- Ask "Why?" and "How does this relate to X?"
-- Create meaningful associations
-- **Example**: Explaining concept in your own words to someone else
+<a id="card-5"></a>
+## Interleaving、Elaboration、Dual Coding、Desirable Difficulties
 
-### 7. Dual Coding
-**Principle**: Combine verbal and visual representations.
-- Words + images > words alone
-- Mental imagery strengthens encoding
-- **Example**: Diagrams with labels, concept maps
+**性質：啟發法。** 相近題型交錯以練辨識；用自我解釋連結既有知識；用文字加真正傳達結構的圖。以延後表現而非當下熟悉感選方法。
 
----
+**適用限制：** 本次未逐篇查核跨任務效果；新手可能先需分段示範，無關圖像增加負擔，任何困難都不是自動 desirable。
 
-## Skill Development
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 8. Deliberate Practice (Ericsson)
-**Principle**: Focused practice at edge of ability with feedback.
-- Not mindless repetition
-- Specific goals, immediate feedback, out of comfort zone
-- **Requirements**: Established field, good teacher, designed exercises
-- **Example**: Chess players studying specific positions, not just playing
+<a id="card-8"></a>
+## Deliberate Practice、練習時數與 Plateau
 
-### 9. 10,000 Hour Rule (Modified)
-**Principle**: Expertise requires substantial practice—but quality matters.
-- Hours alone don't guarantee expertise
-- Must be deliberate practice, not routine
-- Domain affects required time
-- **Example**: Professional musicians average ~10K hours by age 20
+**性質：實證。** 以可評量的子技能設目標，取得回饋並針對弱點練習；停滯時檢查任務、回饋與量測。
 
-### 10. Competence Ladder
-**Principle**: Four stages of skill acquisition.
-1. **Unconscious incompetence**: Don't know what you don't know
-2. **Conscious incompetence**: Aware of gaps
-3. **Conscious competence**: Can do with effort
-4. **Unconscious competence**: Automatic, intuitive
-- **Example**: Learning to drive
+**適用限制：** 一萬小時不是取得專家的充分或必要門檻；練習重要性、定義與解釋量有研究分歧。停滯也可能由疲勞、資源或量測造成。
 
-### 11. Plateau Effect
-**Principle**: Skill improvement often stalls at "good enough."
-- Automaticity prevents further growth
-- Break through by returning to conscious practice
-- **Example**: Typing speed plateaus without deliberate effort
+來源／查核狀態：[PRACTICE](sources.md#practice)。
 
-### 12. Transfer of Learning
-**Principle**: Skills learned in one context applied to another.
-- **Near transfer**: Similar contexts (easy)
-- **Far transfer**: Different contexts (rare, hard)
-- Requires explicit practice of transfer
-- **Example**: Chess expertise doesn't transfer to general reasoning
+<a id="card-10"></a>
+## Competence Ladder、Zeigarnik Effect：降為待查提示
 
-### 13. Zeigarnik Effect
-**Principle**: Unfinished tasks stay in mind.
-- Incompletion creates tension that aids memory
-- Starting is often the hardest part
-- **Example**: Cliffhangers in TV shows
+**性質：啟發法。** 能力階梯可幫自評「不知道、需提醒、能刻意做、已自動化」；未完成任務是否較易記得可作為待查問題。
 
----
+**適用限制：** 學習不保證按四階段前進；未完成必記得、開始就能提高完成率等推論在本次沒有核對證據，不能當干預建議。
 
-## Adaptation & Growth
+來源／查核狀態：[UNVERIFIED](sources.md#unverified)。
 
-### 14. Growth vs Fixed Mindset (Dweck)
-**Principle**: Beliefs about ability affect learning and persistence.
-- **Fixed**: Ability is innate; failure means lack of talent
-- **Growth**: Ability develops; failure is learning opportunity
-- Mindset can be changed
-- **Example**: "I can't do math" (fixed) vs "I can't do math yet" (growth)
+<a id="card-12"></a>
+## 遷移、類比與探索
 
-### 15. Desirable Difficulties
-**Principle**: Conditions that make learning harder but more durable.
-- Spacing, interleaving, testing, generation
-- Feels harder; works better
-- **Example**: Varying practice conditions rather than repeating identical drills
+**性質：啟發法。** Transfer／Analogical Reasoning 對應兩領域的關係與機制，列差異並設新情境測驗。Explore／Exploit 比較學新路線與加深既有能力；Compounding Knowledge 提醒找可復用前提。
 
-### 16. Fail Fast, Learn Fast
-**Principle**: Quick iteration beats extensive upfront planning.
-- Errors are information
-- Short feedback loops accelerate learning
-- **Example**: MVP approach, rapid prototyping
+**適用限制：** 近遷移也未必容易，遠遷移需證據；新知會遺忘或干擾，不是固定指數複利；年齡不決定探索比例。
 
-### 17. Antifragility in Learning
-**Principle**: Gain from stressors and challenges.
-- Moderate stress improves performance
-- Avoiding all difficulty = fragility
-- **Example**: Muscles grow from stress, not rest alone
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 18. Explore/Exploit Trade-off
-**Principle**: Balance trying new things vs leveraging known winners.
-- Early: explore more (long horizon, cheap learning)
-- Later: exploit more (short horizon, use knowledge)
-- **Example**: Career: try different roles early, specialize later
+<a id="card-14"></a>
+## Growth Mindset
 
-### 19. Compounding Knowledge
-**Principle**: Knowledge builds on knowledge exponentially.
-- More you know, faster you learn related things
-- Initial investment pays ongoing dividends
-- **Example**: Learning a second programming language is easier than the first
+**性質：實證。** 能力可發展的信念可搭配可行策略、資源與回饋；評估對實際成果而非口號的影響。
 
----
+**適用限制：** 干預效果依學生與環境異質；不能承諾只改信念就提高成績，不能把缺乏資源歸咎於心態。
 
-## Teaching & Transfer
+來源／查核狀態：[MINDSET](sources.md#mindset)。
 
-### 20. Feynman Technique
-**Principle**: Explain simply to identify gaps.
-1. Choose concept
-2. Explain as if to a child
-3. Identify gaps in explanation
-4. Simplify and use analogies
-- **Example**: "If you can't explain it simply, you don't understand it well enough"
+<a id="card-16"></a>
+## Fail Fast、Antifragility in Learning
 
-### 21. Analogical Reasoning
-**Principle**: Understand new things through familiar comparisons.
-- Surface similarities can mislead
-- Structural similarities enable transfer
-- **Example**: Electricity explained through water flow analogy
+**性質：啟發法。** 把可承受、回饋快的錯誤設成練習機會，明訂停止與更正方式。
 
-### 22. Scaffolding
-**Principle**: Provide temporary support removed as competence grows.
-- Training wheels, worked examples, hints
-- Gradually reduce support
-- **Example**: Math textbooks with decreasing guidance per problem
+**適用限制：** 涉及人身安全或不可逆損失時，先用模擬、沙盒或受控測試取得回饋；壓力過大可能損害表現，休息與規劃仍有價值。
 
-### 23. Cognitive Load Theory
-**Principle**: Working memory is limited; design learning accordingly.
-- Intrinsic load: inherent difficulty
-- Extraneous load: poor design (reduce this)
-- Germane load: schema building (promote this)
-- **Example**: Simplify diagrams, reduce unnecessary information
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 24. Zone of Proximal Development (Vygotsky)
-**Principle**: Optimal learning at edge of current ability.
-- Too easy = boredom, no growth
-- Too hard = frustration, failure
-- Just right = flow, learning
-- **Example**: Games that increase difficulty as player improves
+<a id="card-20"></a>
+## Feynman Technique
 
-### 25. Chunking
-**Principle**: Group information into meaningful units.
-- Working memory holds ~4 chunks
-- Experts have larger chunks
-- **Example**: Phone numbers chunked as 555-123-4567
+**性質：啟發法。** 用平實語言解釋概念，找出跳步，回到資料補足，再用反例或新題目驗證理解。
 
----
+**適用限制：** 這是常見命名的自我解釋流程，本次未核對其原始歸屬；說得簡單不保證理解正確，別犧牲必要條件。
 
-## Quick Reference: Learning Strategies
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-| Goal | Key Models |
-|------|------------|
-| Memorize information | Spacing, Testing, Dual Coding |
-| Develop skills | Deliberate Practice, Desirable Difficulties |
-| Deepen understanding | Feynman Technique, Elaboration |
-| Avoid plateaus | Interleaving, Vary Practice |
-| Build expertise | T-Shaped Knowledge, Circle of Competence |
-| Transfer learning | Analogical Reasoning, Varied Contexts |
-| Maintain motivation | Growth Mindset, Small Wins |
+<a id="card-22"></a>
+## 支架、認知負荷、ZPD 與 Chunking
+
+**性質：啟發法。** Scaffolding 隨熟練撤除提示；Cognitive Load 檢查不必要負擔；ZPD 比較獨立完成與受協助能完成的任務；Chunking 用有意義單位組織內容。
+
+**適用限制：** ZPD 不是 flow 同義詞；工作記憶容量隨任務與測量而變，不能把 4 chunks 當通用設計常數。此處為教學提示，未完成各理論的文獻更新。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。

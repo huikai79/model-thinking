@@ -1,213 +1,93 @@
-# Psychology Models
+# 心理參考
 
-Mental models for understanding human behavior, cognition, and biases.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Cognitive Biases](#cognitive-biases)
-- [Judgment & Perception](#judgment--perception)
-- [Social Psychology](#social-psychology)
-- [Motivation & Behavior](#motivation--behavior)
+<a id="card-1"></a>
+## 自我檢查：確認、可得性、錨定、後見與過度自信
 
----
+**性質：實證。** Confirmation：主動找反證；Availability：比較基準率；Anchoring：先獨立估計；Hindsight：事前記錄預測；Overconfidence：累積可核對的預測與結果。
 
-## Cognitive Biases
+**適用限制：** 這些名稱描述研究中的傾向，不代表每個人每次如此；列為待查解釋，不用名稱診斷個人。寬區間本身不等於校準。
 
-### 1. Confirmation Bias
-**Principle**: We seek/interpret information confirming existing beliefs.
-- Notice supporting evidence; dismiss contradicting evidence
-- Applies to information seeking and interpretation
-- **Counter**: Actively seek disconfirming evidence
-- **Example**: Only reading news sources that align with views
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 2. Availability Heuristic
-**Principle**: Judge frequency by ease of recall.
-- Recent, vivid, emotional events overweighted
-- Leads to fear of plane crashes > car accidents
-- **Counter**: Ask for base rates
-- **Example**: Overestimating crime rates after watching news
+<a id="card-6"></a>
+## Dunning–Kruger Effect
 
-### 3. Anchoring
-**Principle**: First number disproportionately influences judgment.
-- Even random anchors affect estimates
-- Adjust insufficiently from starting point
-- **Counter**: Generate your own estimate before seeing anchors
-- **Example**: Sale prices anchored on original price
+**性質：實證。** 某些任務研究中，低表現組高估自己的相對表現；實務上比較具體作答、自評與外部回饋。
 
-### 4. Hindsight Bias
-**Principle**: Events seem predictable after they occur.
-- "I knew it all along"
-- Distorts learning from outcomes
-- **Counter**: Record predictions before outcomes
-- **Example**: Post-crisis: "Obviously the market would crash"
+**適用限制：** 原研究不是「新手自信高→中階低谷→大師回升」的縱向成長曲線，也不能據此判定某人無能；量尺與統計效應影響解釋。
 
-### 5. Overconfidence
-**Principle**: We're more certain than we should be.
-- Overestimate abilities, underestimate uncertainty
-- Experts especially prone in certain domains
-- **Counter**: Calibration training, wide confidence intervals
-- **Example**: Planning fallacy—projects take longer than expected
+來源／查核狀態：[DUNNING](sources.md#dunning)。
 
-### 6. Dunning-Kruger Effect
-**Principle**: Incompetent people overestimate ability; experts underestimate.
-- Lack skill to recognize lack of skill
-- Experts know enough to see their gaps
-- **Example**: Beginners confident; intermediates doubtful; masters appropriately confident
+<a id="card-7"></a>
+## 現狀、框架與損失 Status Quo、Framing、Loss Aversion
 
-### 7. Status Quo Bias
-**Principle**: Preference for current state over change.
-- Loss aversion makes change feel risky
-- Default options are powerful
-- **Counter**: Actively evaluate whether current state is best
-- **Example**: Staying in suboptimal job because switching is effortful
+**性質：實證。** 用等價的得失表述重問偏好，分清參考點、轉換成本與損失感受。
 
----
+**適用限制：** 損失厭惡不是固定兩倍；留下可能有合理成本。風險態度、稟賦效應與損失厭惡也非同義。
 
-## Judgment & Perception
+來源／查核狀態：[PROSPECT](sources.md#prospect)。
 
-### 8. Framing Effects
-**Principle**: Same information, different presentation → different conclusions.
-- "90% survival" vs "10% mortality"
-- Loss frame vs gain frame
-- **Counter**: Reframe problems multiple ways
-- **Example**: Tax as "penalty" vs "not receiving bonus"
+<a id="card-10"></a>
+## 回憶與順序 Peak-End、Recency／Primacy
 
-### 9. Loss Aversion (Kahneman)
-**Principle**: Losses hurt ~2x as much as equivalent gains feel good.
-- Explains risk aversion for gains, risk seeking for losses
-- Endowment effect: overvalue what we own
-- **Example**: Reluctance to sell losing stocks
+**性質：實證。** 評估回饋時分別看整段體驗、峰值、結尾與提問順序；記憶題則比較不同序位的回憶。
 
-### 10. Peak-End Rule
-**Principle**: Experiences judged by peak intensity and ending.
-- Duration neglected
-- Design experiences to end well
-- **Example**: Vacation remembered by best moment and last day
+**適用限制：** 特定實驗任務的結果不保證所有體驗相同；不要用漂亮結尾掩蓋長期服務問題。本次未逐篇核對。
 
-### 11. Recency and Primacy Effects
-**Principle**: First and last items in sequence remembered best.
-- Middle items forgotten
-- Order of information matters
-- **Example**: First impression, last argument
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 12. Halo Effect
-**Principle**: One positive trait colors perception of others.
-- Attractive people judged smarter, more competent
-- Successful companies' every decision seems brilliant
-- **Counter**: Evaluate traits independently
-- **Example**: "He's handsome, so he must be trustworthy"
+<a id="card-12"></a>
+## 特質推斷與歸因 Halo、Attribution、Representativeness、Self-Serving
 
-### 13. Fundamental Attribution Error
-**Principle**: Overweight personality, underweight situation for others' behavior.
-- "They're lazy" vs "circumstances made it hard"
-- Reverse for ourselves (self-serving bias)
-- **Example**: Judging late colleague harshly without knowing context
+**性質：實證。** 對每個特質獨立找行為證據；同時列情境解釋與個人解釋，檢查刻板印象是否取代基準率。
 
-### 14. Representativeness Heuristic
-**Principle**: Judge probability by resemblance to stereotype.
-- Ignore base rates
-- Leads to conjunction fallacy
-- **Example**: "She loves poetry, so she's probably an English major" (ignoring most students aren't)
+**適用限制：** 基本歸因誤差、自利歸因與行動者／觀察者差異不是互為定義；成功或遲到都不足以推定人格。
 
----
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-## Social Psychology
+<a id="card-15"></a>
+## 社會影響與動機假說
 
-### 15. Social Proof
-**Principle**: We look to others to determine correct behavior.
-- Uncertainty increases reliance
-- "If everyone's doing it, it must be right"
-- **Counter**: Evaluate independently first
-- **Example**: Laugh tracks, long lines, testimonials
+**性質：啟發法。** Social Proof、Authority、Liking、Consistency、In-Group、Groupthink、Incentive-Caused Bias、Reactance 可提醒檢查來源、獨立意見、利益、群體邊界與自主感。先問這些因素是否有可觀察證據。
 
-### 16. Authority Bias
-**Principle**: Defer to perceived authority figures.
-- Experts in one domain assumed experts in others
-- Credentials create automatic trust
-- **Counter**: Evaluate arguments, not just sources
-- **Example**: Celebrity endorsements, doctor recommending investments
+**適用限制：** 每種機制不同，不能見到共識、權威或報酬就推定偏誤；反抗與稀缺感也不同。此處僅保留檢查線索，不宣稱效應量或普遍因果。
 
-### 17. Liking Bias
-**Principle**: More persuaded by people we like.
-- Similarity, compliments, familiarity increase liking
-- Used extensively in sales
-- **Example**: Salespeople finding common ground
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 18. Commitment and Consistency (Cialdini)
-**Principle**: Once committed, we strive to be consistent.
-- Small commitments lead to larger ones
-- Public commitments are stronger
-- **Example**: Foot-in-the-door technique, asking for small favor first
+<a id="card-21"></a>
+## 旁觀者效應 Bystander Effect
 
-### 19. In-Group/Out-Group Bias
-**Principle**: Favor our group, disfavor outsiders.
-- Minimal groups trigger bias
-- Attribute positive to in-group, negative to out-group
-- **Example**: Sports team loyalty, national preferences
+**性質：實證。** 多人都未行動時，試著明確指派具體求助工作，避免責任不清。
 
-### 20. Groupthink
-**Principle**: Group harmony overrides critical evaluation.
-- Dissent suppressed for cohesion
-- Symptoms: overconfidence, stereotyping, self-censorship
-- **Counter**: Appoint devil's advocate, anonymous input
-- **Example**: Bay of Pigs, Challenger disaster
+**適用限制：** 旁觀者存在並非必降低協助；危險性、可提供的支援等會調節效果。不能反推旁觀者冷漠。
 
-### 21. Bystander Effect
-**Principle**: Less likely to help when others are present.
-- Diffusion of responsibility
-- Pluralistic ignorance (nobody acting = must be fine)
-- **Counter**: Direct request to specific individual
-- **Example**: "You in the red shirt, call 911"
+來源／查核狀態：[BYSTANDER](sources.md#bystander)。
 
----
+<a id="card-24"></a>
+## 享樂適應 Hedonic Adaptation
 
-## Motivation & Behavior
+**性質：實證。** 預估生活變化時，分開短期情緒、生活滿意度與長期條件，觀察是否適應。
 
-### 22. Incentive-Caused Bias
-**Principle**: Unconsciously skew judgment toward personal benefit.
-- Doctors prescribing profitable treatments
-- Financial advisors recommending high-commission products
-- **Counter**: Consider "whose incentive is this?"
-- **Example**: "It is difficult to get a man to understand something when his salary depends on not understanding it"
+**適用限制：** 不保證回到固定基準；彩票研究發現持續的生活滿意度提升，不能宣稱物質改善沒有長期作用。
 
-### 23. Reactance
-**Principle**: Threatened freedom makes us want it more.
-- "Don't do X" → desire to do X increases
-- Scarcity increases desire
-- **Example**: Banned books more popular, limited offers
+來源／查核狀態：[LOTTERY](sources.md#lottery)。
 
-### 24. Hedonic Treadmill
-**Principle**: We adapt to changes and return to baseline happiness.
-- Good and bad events have temporary effect
-- Material gains don't produce lasting happiness
-- **Example**: Lottery winners return to baseline happiness
+<a id="card-25"></a>
+## Maslow’s Hierarchy
 
-### 25. Maslow's Hierarchy
-**Principle**: Needs arranged in hierarchy; lower must be met first.
-1. Physiological (food, water, shelter)
-2. Safety (security, stability)
-3. Belonging (love, relationships)
-4. Esteem (respect, recognition)
-5. Self-actualization (realizing potential)
-- **Example**: Hard to focus on creativity when hungry
+**性質：啟發法。** 可用生理、安全、歸屬、尊重與自我實現提醒有哪些需求未被聽見。
 
-### 26. Self-Serving Bias
-**Principle**: Attribute success to self, failure to external factors.
-- Protects ego
-- Opposite of fundamental attribution error applied to self
-- **Example**: "I aced the test because I'm smart; I failed because it was unfair"
+**適用限制：** 不是診斷工具，不能要求低層全滿足才有高層需求。本次原文頁面抓取失敗，嚴格順序與跨文化效度均未確認。
 
-### 27. Sunk Cost Fallacy
-See [decisions.md → #17 Sunk Cost Fallacy](decisions.md#17-sunk-cost-fallacy) — listed under Trade-off Analysis. In psychology context: driven by loss aversion and commitment bias.
+來源／查核狀態：[MASLOW](sources.md#maslow)。
 
----
+<a id="card-27"></a>
+## Sunk Cost Fallacy
 
-## Quick Reference: Bias Categories
+**性質：實證。** 見決策參考的沉沒成本：分開不可收回支出與未來增量。
 
-| Category | Key Biases |
-|----------|------------|
-| Information processing | Confirmation, Availability, Anchoring |
-| Self-assessment | Overconfidence, Dunning-Kruger |
-| Social influence | Social Proof, Authority, Groupthink |
-| Decision-making | Loss Aversion, Status Quo, Sunk Cost |
-| Memory | Hindsight, Peak-End, Recency/Primacy |
-| Attribution | Fundamental Attribution Error, Self-Serving |
+**適用限制：** 不能僅因曾投資而繼續，也不能把過去留下的資產忽略。
+
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。

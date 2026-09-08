@@ -1,192 +1,147 @@
-# Decision Models
+# 決策參考
 
-Mental models for making better choices under uncertainty.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Core Decision Frameworks](#core-decision-frameworks)
-- [Cognitive Tools](#cognitive-tools)
-- [Trade-off Analysis](#trade-off-analysis)
-- [Time & Reversibility](#time--reversibility)
+<a id="card-1"></a>
+## 反向找失敗：Inversion、Pre-Mortem、Devil’s Advocate
 
----
+**性質：啟發法。** 卡在單一路線時，反問如何失敗；Pre-Mortem 假定計畫已失敗，列原因與早期徵兆；Devil’s Advocate 則替相反立場提出最強論證。
 
-## Core Decision Frameworks
+**適用限制：** 假想原因是待驗假說；排除失敗路徑不保證成功。避免把反對意見當證據。
 
-### 1. Inversion (Jacobi)
-**Principle**: "Invert, always invert." Solve problems backwards.
-- Instead of "How do I succeed?" ask "How would I guarantee failure?"
-- Avoid the failure paths to improve odds of success
-- **Example**: To have a good marriage, list what destroys marriages and avoid those
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 2. Second-Order Thinking
-**Principle**: Consider consequences of consequences.
-- First-order: What happens immediately?
-- Second-order: Then what happens?
-- Third-order: And then what?
-- **Example**: Price controls (1st: lower prices) → (2nd: shortage) → (3rd: black markets)
+<a id="card-2"></a>
+## 二階思考 Second-Order Thinking
 
-### 3. Probabilistic Thinking
-**Principle**: Think in probabilities, not certainties.
-- Assign likelihood to outcomes (70% likely, not "probably")
-- Update probabilities with new information (Bayesian)
-- **Example**: "There's a 60% chance this project succeeds given current resources"
+**性質：啟發法。** 追問某項行動後，誰會改變行為、何時反應、反應又影響什麼。例如調價可能改變需求、服務負擔與競爭回應。
 
-### 4. Expected Value
-**Principle**: Value = Probability × Outcome, summed across scenarios.
-- Positive EV decisions should be taken repeatedly
-- Consider both upside and downside scenarios
-- **Formula**: EV = Σ(P_i × V_i)
-- **Example**: A 10% chance at $1M = $100K expected value
+**適用限制：** 每條因果鏈都需資料；價格管制不必然導向黑市，制度與供需條件會改變結果。
 
-### 5. Regret Minimization (Bezos)
-**Principle**: Minimize long-term regret, not short-term discomfort.
-- Project to age 80: Will you regret not trying?
-- Errors of omission often hurt more than errors of commission
-- **Example**: "Will I regret not starting this company at 80?"
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 6. Pre-Mortem (Klein)
-**Principle**: Imagine failure has occurred, then explain why.
-- Before starting: "It's a year from now, we failed. Why?"
-- Surfaces risks that optimism masks
-- **Example**: Team lists reasons the product launch failed before it happens
+<a id="card-3"></a>
+## 機率式思考 Probabilistic Thinking
 
-### 7. Two-Way vs One-Way Door (Bezos)
-**Principle**: Distinguish reversible from irreversible decisions.
-- **One-way doors**: Irreversible, need careful analysis
-- **Two-way doors**: Reversible, decide quickly and iterate
-- **Example**: Hiring = one-way; A/B test = two-way
+**性質：啟發法。** 把確定斷言改成有根據的可能性；列情境、參考類別與更新條件。
 
----
+**適用限制：** 有基準或估計方法才報機率，否則用範圍或相對可能性，不自造百分比。
 
-## Cognitive Tools
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 8. Circle of Competence
-**Principle**: Know where your expertise ends.
-- Stay within your circle or expand it deliberately
-- The edges are where mistakes happen
-- **Example**: Buffett avoiding tech stocks he didn't understand
+<a id="card-4"></a>
+## 期望值 Expected Value
 
-### 9. Occam's Razor
-**Principle**: Prefer the simplest sufficient explanation.
-- Don't multiply entities beyond necessity
-- Simple explanations are more likely to be true
-- **Example**: "The server is down" beats "coordinated hacker attack"
+**性質：正式。** 離散結果的 E[V] = Σ pᵢvᵢ；比較機率加權結果，同時列出極端損失。
 
-### 10. Hanlon's Razor
-**Principle**: Don't attribute to malice what can be explained by incompetence.
-- Most errors are accidental, not intentional
-- Reduces unnecessary conflict
-- **Example**: They missed the deadline from poor planning, not sabotage
+**適用限制：** 需完整且互斥的情境、可辯護機率及可比較效用；正期望值不代表能承擔破產風險。詳見統計與風險。
 
-### 11. First Principles Thinking
-**Principle**: Reduce to fundamental truths and reason up.
-- Question assumptions: "Why do we believe this?"
-- Build from basic physics/economics/logic
-- **Example**: Musk on batteries: What are raw material costs?
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 12. Falsifiability (Popper)
-**Principle**: Good theories can be proven wrong.
-- Ask: "What would change my mind?"
-- Unfalsifiable beliefs aren't knowledge
-- **Example**: "If sales don't improve 20% in 6 months, the strategy failed"
+<a id="card-5"></a>
+## 時間距離：Regret Minimization、10/10/10
 
-### 13. Devil's Advocate
-**Principle**: Deliberately argue the opposite position.
-- Appoint someone to challenge the consensus
-- Surfaces hidden assumptions
-- **Example**: Before acquisition, assign team to argue against it
+**性質：啟發法。** 用短期、中期與長期的自己比較遺憾、收益及責任；10/10/10 是提醒換時間尺度的口訣。
 
-### 14. Six Thinking Hats (De Bono)
-**Principle**: Separate thinking into six parallel modes instead of arguing mixed viewpoints.
-- **White** (facts) → **Red** (feelings) → **Black** (risks) → **Yellow** (benefits) → **Green** (creativity) → **Blue** (process/meta)
-- Everyone wears the same hat at the same time, then switches together
-- Always begin and end with Blue Hat; use Yellow before Black
-- **Key rule**: One hat at a time — no mixing modes
-- **Example**: Strategy meeting — Blue (agenda) → White (market data) → Yellow (opportunity) → Black (risks) → Green (solutions) → Red (gut check) → Blue (summary)
+**適用限制：** 對未來偏好的想像會錯；不把「沒做更後悔」視為普遍事實，也不替使用者指定人生目標。
 
----
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-## Trade-off Analysis
+<a id="card-7"></a>
+## 可逆性與選擇權 Two-Way Door、Option Value
 
-### 15. Opportunity Cost
-See [economics.md → #2 Opportunity Cost](economics.md#2-opportunity-cost) — foundational concept. In decision context: always ask "What am I giving up?" before committing resources.
+**性質：啟發法。** 列撤回成本、承諾期限與等待可取得的資訊，再比較立即行動與保留選擇。
 
-### 16. Marginal Thinking
-**Principle**: Evaluate decisions at the margin, not average.
-- "Should we produce one more unit?"
-- Ignore sunk costs; focus on incremental value
-- **Example**: Marginal revenue vs marginal cost for next sale
+**適用限制：** 可逆性是程度與時間相關；招聘、租約均非固定一向門。等待也有成本與機會流失。
 
-### 17. Sunk Cost Fallacy
-**Principle**: Past costs shouldn't affect future decisions.
-- "We've invested too much to quit" is a trap
-- Only future costs and benefits matter
-- **Example**: Continuing a bad project because of prior investment
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 18. Asymmetric Risk-Reward
-**Principle**: Seek situations with limited downside, unlimited upside.
-- Lose $1 or win $100 = good bet at even odds
-- Taleb's barbell: very safe + very risky
-- **Example**: Small venture investments with 100x potential
+<a id="card-8"></a>
+## 能力圈 Circle of Competence
 
-### 19. Satisficing vs Maximizing (Simon)
-**Principle**: "Good enough" often beats "optimal."
-- Maximizing has diminishing returns and decision fatigue
-- Set a threshold; accept first option that meets it
-- **Example**: Hire first candidate meeting all requirements
+**性質：啟發法。** 列哪些判斷有可驗證的過往表現，哪些需外部評估；把未知拆成可學習與需專業協助的部分。
 
----
+**適用限制：** 熟悉感不等於能力；專家的領域適配、利益衝突與證據仍要檢查。
 
-## Time & Reversibility
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 20. Temporal Discounting
-**Principle**: We undervalue future relative to present.
-- $100 today feels worth more than $110 next year
-- Counter by visualizing future self vividly
-- **Example**: Retirement savings require overriding this bias
+<a id="card-9"></a>
+## 替代解釋 Occam’s Razor、Hanlon’s Razor
 
-### 21. Commitment Devices
-**Principle**: Constrain future choices to ensure follow-through.
-- Remove the option to quit
-- Odysseus and the sirens
-- **Example**: Auto-deduct savings; delete social media apps
+**性質：啟發法。** Occam 優先考慮能解釋現象而額外假設較少的說法；Hanlon 提醒同時考慮疏失、限制與惡意。
 
-### 22. Option Value
-**Principle**: Flexibility has value; don't foreclose options cheaply.
-- Keep doors open when cost is low
-- Irreversibility requires premium
-- **Example**: Month-to-month lease vs yearly at slight discount
+**適用限制：** 簡單不自動較真；兩把剃刀均不能推定動機，也不能排除已有證據支持的惡意。
 
-### 23. Weighted Decision Matrix
-**Principle**: Score options against weighted criteria.
-1. List criteria and assign weights (total = 100%)
-2. Score each option per criterion (1-10)
-3. Calculate weighted sum
-4. Compare totals
-- **Example**: Job offers scored on salary (30%), growth (25%), culture (25%), location (20%)
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 24. 10/10/10 Rule (Welch)
-**Principle**: Consider how you'll feel in 10 minutes, 10 months, 10 years.
-- Balances short-term emotion with long-term perspective
-- **Example**: Quitting job in anger feels good (10 min), bad (10 months), depends (10 years)
+<a id="card-11"></a>
+## 從基礎重建與反駁 First Principles、Falsifiability
 
-### 25. WRAP Framework (Heath)
-**Principle**: Widen options, Reality-test, Attain distance, Prepare to be wrong.
-1. **W**iden: Consider more alternatives
-2. **R**eality-test: Seek disconfirming evidence
-3. **A**ttain distance: Overcome short-term emotion
-4. **P**repare: Plan for failure scenarios
+**性質：啟發法。** 拆出必要條件與暫定假設，再提出可區分解釋的觀察。經驗性主張應說明什麼結果會使它受質疑。
 
----
+**適用限制：** 別把個人直覺叫第一原理；可反駁性不是所有知識的單一標準，未達績效目標也未必證明某因果假說錯誤。
 
-## Model Selection Guide
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-| Situation | Recommended Models |
-|-----------|-------------------|
-| High stakes, irreversible | Pre-Mortem, Devil's Advocate, Inversion |
-| Group decision, multiple perspectives | Six Thinking Hats, Devil's Advocate |
-| Quick, reversible | Two-Way Door, Satisficing |
-| Under uncertainty | Probabilistic Thinking, Expected Value |
-| Long time horizon | Regret Minimization, 10/10/10 |
-| New domain | Circle of Competence, First Principles |
-| Comparing options | Weighted Matrix, Opportunity Cost |
+<a id="card-14"></a>
+## 六頂思考帽 Six Thinking Hats
+
+**性質：啟發法。** 團隊討論混雜時，分別處理事實、感受、風險、收益、新想法及流程；主持者依任務安排順序。
+
+**適用限制：** 這是討論程序，不是六份獨立證據；沒有適用所有會議的固定帽子順序。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
+
+<a id="card-15"></a>
+## 機會成本與邊際判斷 Opportunity Cost、Marginal Thinking
+
+**性質：正式。** 比較下一個可行選項，以及多投入一單位造成的增量收益與成本；定義見經濟參考。
+
+**適用限制：** 以實際可行的替代方案比較，包含切換成本；不能將所有放棄選項的收益相加。
+
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
+
+<a id="card-17"></a>
+## 沉沒成本 Sunk Cost Fallacy
+
+**性質：實證。** 問「從現在起繼續與停止各造成什麼差異？」不可收回的過去支出不應獨立成為繼續理由。
+
+**適用限制：** 過去投入可能留下可用資產、學習或合約義務；這些未來效果仍須計入，不是把歷史全部忽略。
+
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
+
+<a id="card-18"></a>
+## 不對稱損益 Asymmetric Risk-Reward
+
+**性質：啟發法。** 畫出最壞、常見與最好結果，檢查損失上限是否真能限制。
+
+**適用限制：** 高上行不能補足未知機率、昂貴成本或相關損失；不推出預設投資配置。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
+
+<a id="card-19"></a>
+## 停止搜尋與加權比較 Satisficing、Weighted Decision Matrix
+
+**性質：啟發法。** 先設必要門檻，再比較達標選項；需要多準則比較時由使用者確認權重、量尺，並測試改權重是否翻盤。
+
+**適用限制：** 好夠了需合適門檻；分數與權重是偏好判斷，不能當客觀機率，也不能讓高分抵銷安全底線。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
+
+<a id="card-20"></a>
+## 跨期選擇與承諾 Temporal Discounting、Commitment Devices
+
+**性質：啟發法。** 比較現在與未來利益；若確有自我控制問題，設計可撤回的提醒、預設或承諾。
+
+**適用限制：** 折現也可能反映風險與資金需求；限制未來選擇可能有害，先問是否符合本人目標。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
+
+<a id="card-25"></a>
+## WRAP
+
+**性質：啟發法。** Widen options 拓展選項；Reality-test 檢驗假設；Attain distance 拉開情緒距離；Prepare to be wrong 預備錯誤情境。
+
+**適用限制：** 整合式清單，不是已驗證優於其他流程的定律；本次未核實原書逐字規格。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。

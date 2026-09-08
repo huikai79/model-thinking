@@ -1,210 +1,75 @@
-# Economics Models
+# 經濟參考
 
-Mental models for markets, incentives, resource allocation, and value creation.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Foundational Concepts](#foundational-concepts)
-- [Market Dynamics](#market-dynamics)
-- [Incentives & Behavior](#incentives--behavior)
-- [Value & Pricing](#value--pricing)
+<a id="card-1"></a>
+## 供需、邊際產出、規模與彈性
 
----
+**性質：正式。** Supply／Demand 在其他條件固定下分析價格與數量；Diminishing Returns 看其他投入固定時增加某投入的邊際產出；Economies of Scale 看規模改變的平均成本；Price Elasticity 是相對變動的比值。
 
-## Foundational Concepts
+**適用限制：** 邊際產出遞減不同於消費邊際效用；規模大不必然省錢，缺乏彈性不是需求完全不變。曲線位移與曲線上移動要分開。
 
-### 1. Supply and Demand
-**Principle**: Prices balance what sellers offer and buyers want.
-- Higher price → more supply, less demand
-- Equilibrium where curves cross
-- Shifts vs movements along curve
-- **Example**: Concert tickets: high demand + fixed supply = high price
+來源／查核狀態：[MICRO](sources.md#micro)。
 
-### 2. Opportunity Cost
-**Principle**: True cost is the best alternative foregone.
-- Every choice has a hidden cost
-- Money in savings costs market returns
-- Time spent here can't be spent there
-- **Example**: College degree costs tuition + 4 years of salary
+<a id="card-2"></a>
+## 機會成本、邊際判斷與比較優勢
 
-### 3. Marginal Thinking
-**Principle**: Evaluate decisions at the edge, not average.
-- "Should I do one more unit?"
-- Marginal cost vs marginal benefit
-- Ignore sunk costs
-- **Example**: Is the next employee worth their salary increase?
+**性質：正式。** Opportunity Cost 是放棄的最佳可行替代收益；Marginal Thinking 比較增量；Comparative Advantage 用相對機會成本判斷分工。
 
-### 4. Comparative Advantage (Ricardo)
-**Principle**: Specialize in what you do relatively best.
-- Trade benefits both parties even if one is absolutely better at everything
-- Relative efficiency, not absolute
-- **Example**: Lawyer earning $500/hr shouldn't do $50/hr tasks even if faster
+**適用限制：** 最佳替代方案可以是一整段跨期策略，包含未來收益與學習的資訊價值，機會成本並不限於單期或已知價值。比較成本與收益要用共同時間窗，分清效用尺度與換算，避免重複計入；缺成本或效果持續期間，不能斷定一次性方案比持續投入便宜。加入交易、切換、學習與分配成本；帳面時薪不一定能轉換為實際替代收入，總收益上升不代表每個人受益。
 
-### 5. Diminishing Returns
-**Principle**: Each additional unit provides less value than the previous.
-- First slice of pizza > tenth slice
-- Eventually more input yields less output
-- **Example**: Third employee adds less than second
+來源／查核狀態：[MICRO](sources.md#micro)。
 
-### 6. Economies of Scale
-**Principle**: Cost per unit decreases as volume increases.
-- Fixed costs spread across more units
-- Specialization becomes worthwhile
-- Limits: diseconomies of scale (coordination costs)
-- **Example**: Manufacturing, software, infrastructure
+<a id="card-7"></a>
+## Invisible Hand、Creative Destruction、Bubbles
 
----
+**性質：啟發法。** 價格可能協調分散決策；創新可能改變既有資產價值；泡沫假說問價格與可辯護基本面、信用及預期回饋是否脫節。
 
-## Market Dynamics
+**適用限制：** 自利不必帶來社會最優；創新不保證社會淨益，基本面未知時難判泡沫，更不能靠此預測崩盤時間。
 
-### 7. Invisible Hand (Smith)
-**Principle**: Self-interest often produces socially beneficial outcomes.
-- Price signals coordinate millions of decisions
-- No central planner needed
-- Requires competitive markets
-- **Example**: Nobody orchestrates breakfast supply to NYC
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 8. Creative Destruction (Schumpeter)
-**Principle**: Innovation destroys old industries while creating new ones.
-- Essential to capitalism's dynamism
-- Painful for incumbents
-- **Example**: Digital photography destroying film industry
+<a id="card-9"></a>
+## 外部性、市場失靈、公地與搭便車
 
-### 9. Externalities
-**Principle**: Costs or benefits that fall on third parties.
-- **Negative**: Pollution (cost to society, not producer)
-- **Positive**: Education (benefits society beyond individual)
-- Markets under/overproduce without correction
-- **Example**: Factory pollution affecting nearby residents
+**性質：正式。** Externalities 看未計價的第三方影響；Market Failure 先說效率基準；Commons 分清競爭性與排他性；Free Rider 問不付費仍受益是否導致供給不足。
 
-### 10. Market Failure
-**Principle**: Markets don't always produce optimal outcomes.
-- Monopoly/oligopoly
-- Information asymmetry
-- Externalities
-- Public goods
-- **Example**: Healthcare markets with information asymmetry
+**適用限制：** 共享資源不必然耗竭，公地與公共財不同；治理、私有化與政府方案各有成本，需比較實際制度。
 
-### 11. Price Elasticity
-**Principle**: How responsive quantity is to price changes.
-- Elastic: small price change → large quantity change
-- Inelastic: price changes, quantity doesn't
-- **Example**: Insulin (inelastic) vs luxury goods (elastic)
+來源／查核狀態：[MICRO](sources.md#micro)、[OSTROM](sources.md#ostrom)。
 
-### 12. Arbitrage
-**Principle**: Profit from price differences of identical goods.
-- Buy low, sell high, simultaneously
-- Arbitrage tends to eliminate itself
-- Information/transaction costs create opportunities
-- **Example**: Currency arbitrage across markets
+<a id="card-12"></a>
+## 套利 Arbitrage
 
-### 13. Bubbles and Crashes
-**Principle**: Prices can detach from fundamentals.
-- Reinforcing feedback: price rise → more buying → price rise
-- Eventual correction when bubble bursts
-- "The market can stay irrational longer than you can stay solvent"
-- **Example**: Dot-com bubble, housing bubble
+**性質：正式。** 比較等價現金流在相同時點的價格差與全部交易成本。
 
----
+**適用限制：** 現實執行、信用、融資與流動性風險可能使看似套利仍有損失；不是所有低買高賣都無風險套利。
 
-## Incentives & Behavior
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 14. Incentives
-**Principle**: "Show me the incentive and I will show you the outcome." (Munger)
-- People respond to incentives, often in unexpected ways
-- Misaligned incentives → perverse behavior
-- **Example**: Paying for lines of code → bloated code
+<a id="card-14"></a>
+## 誘因、委託代理、道德風險與逆選擇
 
-### 15. Principal-Agent Problem
-**Principle**: Agent's interests may differ from principal's.
-- Agents have information advantage
-- Monitoring is costly
-- Solutions: align incentives, build trust, reduce information gap
-- **Example**: CEO (agent) vs shareholders (principal)
+**性質：正式。** Incentives 檢查獎酬與約束；Principal-Agent 看目標與資訊差；Moral Hazard 看不易觀察的行動如何受契約影響；Adverse Selection 看交易前私人資訊如何影響參與。
 
-### 16. Moral Hazard
-**Principle**: People take more risk when insulated from consequences.
-- Insurance reduces care taken
-- Bailouts encourage risky behavior
-- **Example**: Banks taking excessive risk knowing they'll be bailed out
+**適用限制：** 不是看到保險就知某人更冒險；誘因與監督也可能改變合作動機。先提出可驗機制，別只猜個人利益。
 
-### 17. Adverse Selection
-**Principle**: Hidden information leads to market breakdown.
-- Bad risks crowd out good risks
-- "Lemons problem" in used cars
-- Solutions: signaling, screening, guarantees
-- **Example**: Health insurance attracting sick people
+來源／查核狀態：[MICRO](sources.md#micro)。
 
-### 18. Tragedy of the Commons
-**Principle**: Shared resources are over-exploited.
-- Individual benefit, shared cost
-- Each person's rational choice leads to collective ruin
-- Solutions: privatization, regulation, norms
-- **Example**: Overfishing, overgrazing, pollution
+<a id="card-20"></a>
+## 主觀價值、差別訂價、組合銷售與拍賣
 
-### 19. Free Rider Problem
-**Principle**: People benefit without contributing.
-- Public goods: can't exclude non-payers
-- Under-provision of public goods
-- **Example**: National defense, public radio
+**性質：正式。** Subjective Value 問各方需求；Price Discrimination 看分群、轉售與支付意願；Bundling 比較組合價值；Auctions 分清規則與誘因。
 
----
+**適用限制：** 負相關偏好可支持某些 bundling 模型，但非唯一條件；拍賣出價不都等於真實估值，第二價格真實出價結果也需私人價值等設定。
 
-## Value & Pricing
+來源／查核狀態：[MICRO](sources.md#micro)。
 
-### 20. Subjective Value
-**Principle**: Value is in the eye of the beholder.
-- Not intrinsic to the object
-- Explains why trade is positive-sum
-- **Example**: Baseball card worth $1 to one person, $10,000 to collector
+<a id="card-23"></a>
+## Network Effects、Two-Sided Markets、Switching Costs
 
-### 21. Price Discrimination
-**Principle**: Charge different prices to different segments.
-- Capture more consumer surplus
-- Requires: ability to segment, prevent resale
-- **Example**: Student discounts, airline pricing
+**性質：正式。** 主定義見網路參考；明確標各側使用者得到的價值與轉換負擔。
 
-### 22. Bundling
-**Principle**: Sell products together to capture varied preferences.
-- Works when preferences are negatively correlated
-- Reduces variance in willingness to pay
-- **Example**: Cable TV packages, software suites
+**適用限制：** 流量、推薦或營收成長不是網路效應的充分證據，鎖定不能代替產品價值。
 
-### 23. Network Effects
-**Principle**: Value increases as more people use the product.
-- Direct: phone network (more users = more people to call)
-- Indirect: platform (more users = more developers = more apps)
-- Winner-take-most dynamics
-- **Example**: Social networks, operating systems
-
-### 24. Two-Sided Markets
-**Principle**: Platform connecting two interdependent user groups.
-- Chicken-and-egg problem: need both sides
-- Cross-side network effects
-- **Example**: Credit cards (merchants + consumers), marketplaces
-
-### 25. Switching Costs
-**Principle**: Cost of changing from one product to another.
-- Creates lock-in
-- Source of pricing power
-- **Example**: Changing banks, CRM systems, phone ecosystems
-
-### 26. Auctions and Price Discovery
-**Principle**: Markets that reveal willingness to pay.
-- English: ascending bids
-- Dutch: descending price
-- Sealed-bid: one shot
-- Vickrey: second-price
-- **Example**: eBay, ad auctions, spectrum sales
-
----
-
-## Quick Reference: Economic Thinking
-
-| Situation | Key Models |
-|-----------|------------|
-| Evaluating trade-offs | Opportunity Cost, Marginal Thinking |
-| Understanding markets | Supply/Demand, Elasticity |
-| Analyzing incentives | Principal-Agent, Moral Hazard, Adverse Selection |
-| Pricing strategy | Price Discrimination, Bundling, Network Effects |
-| Market structure | Economies of Scale, Switching Costs |
-| Market problems | Externalities, Commons, Free Rider |
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。

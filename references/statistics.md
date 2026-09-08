@@ -1,194 +1,120 @@
-# Statistical Models
+# 統計參考
 
-Mental models for interpreting data, probability, and making predictions. Draws from Nate Silver's "The Signal and the Noise" and statistical foundations.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Probability Foundations](#probability-foundations)
-- [Distributions & Patterns](#distributions--patterns)
-- [Prediction & Inference](#prediction--inference)
-- [Common Pitfalls](#common-pitfalls)
+<a id="card-1"></a>
+## 條件機率、基準率、Bayes 與獨立性
 
----
+**性質：正式。** P(A∣B)=P(B∣A)P(A)/P(B)，需 P(B)>0。選合適參考母體，再看證據；獨立時 P(A∩B)=P(A)P(B)。
 
-## Probability Foundations
+**適用限制：** 條件機率方向不可互換；獨立性是分布性質，非無因果的同義詞。陽性後風險需盛行率與檢測性能，不能只憑疾病罕見決定。
 
-### 1. Bayes' Theorem
-**Principle**: Update beliefs based on new evidence.
-- P(A|B) = P(B|A) × P(A) / P(B)
-- Prior × Likelihood / Evidence = Posterior
-- **Key insight**: Prior probability matters enormously
-- **Example**: Positive rare disease test → still likely healthy if disease is rare
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-**Practical form**:
-- Prior odds × Likelihood ratio = Posterior odds
-- Start with base rate, update with evidence strength
+<a id="card-5"></a>
+## 大數法則與期望值
 
-### 2. Base Rates
-**Principle**: The frequency in the general population.
-- Always ask: "How common is this typically?"
-- Specific evidence must be weighted against base rates
-- **Example**: Most CEOs are tall, but most tall people aren't CEOs
+**性質：正式。** 在適當條件下，樣本平均趨近母體期望；E[X]=Σpᵢxᵢ。先列取樣過程、期望是否存在及重複條件。
 
-### 3. Conditional Probability
-**Principle**: P(A given B) differs from P(B given A).
-- P(rain|clouds) ≠ P(clouds|rain)
-- Classic confusion in medical diagnosis
-- **Example**: P(symptoms|disease) vs P(disease|symptoms)
+**適用限制：** 例如獨立同分布且 E[∣X∣] 有限；有限次不保證獲利，更不保證免破產。
 
-### 4. Independence
-**Principle**: Events that don't influence each other.
-- P(A and B) = P(A) × P(B) only if independent
-- True independence is rare; don't assume it
-- **Example**: Coin flips independent; stock returns often not
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 5. Law of Large Numbers
-**Principle**: Average approaches expected value with more trials.
-- Short run: anything can happen
-- Long run: statistics win
-- **Example**: Casino always wins given enough bets
+<a id="card-7"></a>
+## 常態分布 Normal Distribution
 
-### 6. Expected Value
-**Principle**: Probability-weighted average of outcomes.
-- EV = Σ(P_i × V_i)
-- Positive EV bets should be taken repeatedly
-- **Example**: EV of dice roll = (1+2+3+4+5+6)/6 = 3.5
+**性質：正式。** 對稱鐘形分布由平均與標準差決定；在適合常態近似時，可用分位數描述範圍。
 
----
+**適用限制：** 需檢查資料形狀、界限與離群；身高、考試分數、誤差均非天然保證常態。
 
-## Distributions & Patterns
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 7. Normal Distribution (Gaussian)
-**Principle**: Bell curve describes many natural phenomena.
-- Mean, median, mode coincide
-- 68-95-99.7 rule (within 1, 2, 3 standard deviations)
-- **Applies to**: Height, test scores, measurement errors
-- **Example**: Most people near average height; extremes rare
+<a id="card-8"></a>
+## 冪次律與厚尾 Power Laws、Fat Tails
 
-### 8. Power Laws (Pareto)
-**Principle**: Few items dominate; long tail of small items.
-- 80/20 rule: 20% of causes → 80% of effects
-- No meaningful "average"
-- **Applies to**: Wealth, city sizes, word frequency, website traffic
-- **Example**: Top 1% of videos get majority of views
+**性質：正式。** 檢查尾部是否比所用常態模型更重；冪次律需估尾指數、適用區間並與替代分布比較。
 
-### 9. Fat Tails
-**Principle**: Extreme events more common than normal distribution predicts.
-- Black swans lurk in the tails
-- Don't use normal distribution for financial returns
-- **Example**: Market crashes happen far more often than bell curve predicts
+**適用限制：** 80/20 不是冪次律定義；是否有有限平均／變異數取決於分布與參數，不能宣稱所有平均無意義。資料少時只報尾風險不確定。
 
-### 10. Regression to the Mean
-**Principle**: Extreme observations tend to be followed by less extreme ones.
-- Not causation; it's statistical artifact
-- First measurement includes luck; second measurement less lucky
-- **Example**: Rookie of the Year often has sophomore slump
+來源／查核狀態：[POWERLAW](sources.md#powerlaw)。
 
-### 11. Simpson's Paradox
-**Principle**: Aggregate trends can reverse when data is disaggregated.
-- Group A beats Group B overall, but B beats A in every subgroup
-- Hidden third variable explains reversal
-- **Example**: Hospital with worse overall survival has better rates for each disease severity
+<a id="card-10"></a>
+## 均值回歸 Regression to the Mean
 
-### 12. Survivorship Bias
-**Principle**: We only see what survived; failures are invisible.
-- Successful entrepreneurs studied; failures forgotten
-- Mutual fund performance overstated (dead funds excluded)
-- **Example**: "Buildings were built better in the past" – no, bad ones fell down
+**性質：正式。** 以極端觀察挑選樣本後，檢查下一次較不極端是否可由雜訊與不完全相關解釋。
 
----
+**適用限制：** 不是每次必發生，也不是神祕修正力；需區分真實變化與選樣效應。
 
-## Prediction & Inference
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 13. Signal vs Noise
-**Principle**: Distinguish meaningful patterns from random variation.
-- More data doesn't help if it's all noise
-- Overfit to noise = poor prediction
-- **Example**: Stock tips based on patterns that are just randomness
+<a id="card-11"></a>
+## 辛普森悖論 Simpson’s Paradox
 
-### 14. Confidence Intervals
-**Principle**: Range of plausible values, not point estimates.
-- 95% CI means 95 of 100 such intervals contain true value
-- Wide interval = more uncertainty
-- **Example**: "Between 40% and 60%" more honest than "50%"
+**性質：正式。** 總體與分組趨勢不同時，比較各組權重及分組變數與結果、處置的關係。
 
-### 15. Correlation vs Causation
-**Principle**: Correlation doesn't imply causation.
-- A could cause B, B could cause A, or C could cause both
-- Need controlled experiments or careful inference
-- **Example**: Ice cream sales correlate with drowning (both caused by summer)
+**適用限制：** 不能自動選分組或總體結果；適合哪一種取決於因果問題與取樣機制。
 
-### 16. Selection Bias
-**Principle**: Non-random sampling distorts conclusions.
-- Who chose to participate? Who dropped out?
-- **Example**: Survey only reaches those who answer phones
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 17. Overfitting
-**Principle**: Model explains noise, not just signal.
-- Great fit on training data; poor on new data
-- More parameters = more overfitting risk
-- **Example**: Model predicting Super Bowl winner from NFC/AFC pattern
+<a id="card-12"></a>
+## 倖存與選擇偏差 Survivorship、Selection Bias
 
-### 18. Sample Size Effects
-**Principle**: Small samples have high variance.
-- Extreme results more likely from small groups
-- Don't over-interpret small samples
-- **Example**: Small hospitals have highest AND lowest mortality rates
+**性質：正式。** 列納入、排除、退出與缺失規則，問資料代表誰、漏掉誰。
 
-### 19. Multiple Comparisons Problem
-**Principle**: Testing many hypotheses → some will be "significant" by chance.
-- Test 20 things at 5% significance → expect 1 false positive
-- Requires correction (Bonferroni, etc.)
-- **Example**: One food linked to cancer when testing hundreds
+**適用限制：** 非隨機資料不一定無用；推論須有適當設計／假設，大樣本不能自動修復選偏。
 
----
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-## Common Pitfalls
+<a id="card-13"></a>
+## 訊號、過擬合與樣本量
 
-### 20. Gambler's Fallacy
-**Principle**: Believing past random events affect future probabilities.
-- "It's due for heads" after streak of tails
-- Each flip is independent
-- **Example**: Roulette wheel has no memory
+**性質：正式。** 把資料留作樣本外評估；報有效樣本量、群聚、漂移與誤差，區分可泛化訊號與訓練擬合。
 
-### 21. Hot Hand Fallacy
-**Principle**: Believing performance streaks predict future performance.
-- Sometimes real (skill), sometimes illusion (luck)
-- Hard to distinguish without large samples
-- **Example**: Shooter "on fire" may just be within normal variance
+**適用限制：** 更多資料可以降低某些雜訊但不能解決所有偏差；參數數量與樣本量都不是單獨的品質判準。
 
-### 22. Neglect of Probability
-**Principle**: Treating unlikely events as impossible (or certain).
-- 1% risk ≠ 0%; 99% ≠ 100%
-- Matters enormously for rare, high-impact events
-- **Example**: "That will never happen" → then it does
+來源／查核狀態：[ISL](sources.md#isl)。
 
-### 23. Conjunction Fallacy
-**Principle**: Specific scenarios seem more likely than general ones.
-- P(A and B) ≤ P(A)
-- Stories feel more probable than statistics
-- **Example**: "Bank teller and feminist" seems more likely than "bank teller"
+<a id="card-14"></a>
+## 信賴區間 Confidence Intervals
 
-### 24. Denominator Neglect
-**Principle**: Focusing on numerator, ignoring base.
-- "10 deaths" sounds worse than "10 in 10 million"
-- Always ask: out of how many?
-- **Example**: Rare disease seems common when cases reported without context
+**性質：正式。** 在模型與抽樣程序成立時，95% 程序長期重複產生的區間約有 95% 涵蓋固定真值；報方法、估計量與區間。
 
-### 25. Availability Heuristic
-**Principle**: Judging frequency by ease of recall.
-- Dramatic events overweighted (plane crashes vs car accidents)
-- Recent events overweighted
-- **Example**: Fear of terrorism > fear of heart disease
+**適用限制：** 不是這次固定區間有 95% 機率含真值，也不是未來觀察的 95% 範圍；寬區間不自動比較誠實。
 
----
+來源／查核狀態：[NIST](sources.md#nist)。
 
-## Quick Reference: When to Use Each Model
+<a id="card-15"></a>
+## 相關與因果 Correlation vs Causation
 
-| Situation | Key Models |
-|-----------|------------|
-| Updating beliefs with evidence | Bayes' Theorem, Base Rates |
-| Analyzing extreme values | Fat Tails, Power Laws |
-| Predicting future from past | Regression to Mean, Signal vs Noise |
-| Evaluating research claims | Sample Size, Selection Bias, Multiple Comparisons |
-| Understanding distributions | Normal vs Power Law, Survivorship Bias |
-| Assessing risk | Expected Value, Neglect of Probability |
+**性質：正式。** 列反向因果、共同原因與選樣，再找實驗或有可辯護識別假設的研究設計。
+
+**適用限制：** 相關本身不能決定哪條因果鏈為真；也不能據此宣稱無因果。
+
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
+
+<a id="card-19"></a>
+## 多重比較 Multiple Comparisons
+
+**性質：正式。** 報實際嘗試的假說數與選擇程序；依目的控制家族錯誤率或假發現率。
+
+**適用限制：** 若 20 個虛無假說都真且每個檢定有效、α=.05，預期假陽性數至多為 1；每個檢定的實際型一錯誤率恰為 .05 時才等於 1。不表示必出現一個或至少一個機率為 100%。
+
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
+
+<a id="card-20"></a>
+## 連勝與獨立試驗 Gambler’s Fallacy、Hot Hand
+
+**性質：實證。** 賭徒謬誤：獨立且機率固定時，前幾次不改下一次機率。表現連勝則需檢驗技能／環境變動與連勝選樣偏差。
+
+**適用限制：** Hot hand 不應一概叫謬誤；既有研究修正選樣偏差後可得到不同結論，仍不能認定個別連勝必持續。
+
+來源／查核狀態：[HOTHAND](sources.md#hothand)。
+
+<a id="card-22"></a>
+## 機率判斷失誤與分母檢查
+
+**性質：啟發法。** Neglect of Probability：區分小機率與零；Conjunction：P(A∩B)≤P(A)；Denominator Neglect：補分母與暴露時間；Availability：用資料檢查易想起的例子。
+
+**適用限制：** 偏誤名稱是自我檢查，不是診斷某人不理性的證據；機率需相同母體、事件定義與期間。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。

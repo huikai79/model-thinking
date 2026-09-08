@@ -1,201 +1,75 @@
-# Risk Models
+# 風險參考
 
-Mental models for uncertainty, fragility, and tail events. Heavily influenced by Nassim Taleb's work.
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [Uncertainty & Probability](#uncertainty--probability)
-- [Fragility Spectrum](#fragility-spectrum)
-- [Tail Risk & Black Swans](#tail-risk--black-swans)
-- [Risk Management](#risk-management)
+<a id="card-1"></a>
+## 不確定性與校準
 
----
+**性質：啟發法。** Risk／Uncertainty 區分模型內可估的機率與模型外未知；Aleatory／Epistemic 區分相對於模型的變動與知識不足；Known Knowns 盤點盲點；Calibration 用預測與結果檢查信心。
 
-## Uncertainty & Probability
+**適用限制：** 不是所有風險已知，也不是所有無知可消除；未知未知不能被清單完整列出。校準要看一批相似預測，不能評一個未結束事件。
 
-### 1. Risk vs Uncertainty (Knight)
-**Principle**: Distinguish calculable risk from unmeasurable uncertainty.
-- **Risk**: Known probability distribution (dice, cards)
-- **Uncertainty**: Unknown unknowns (novel situations)
-- Most important decisions involve uncertainty, not risk
-- **Example**: Insurance (risk) vs startup (uncertainty)
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 2. Aleatory vs Epistemic Uncertainty
-**Principle**: Irreducible randomness vs reducible ignorance.
-- **Aleatory**: Inherent randomness (quantum mechanics, dice)
-- **Epistemic**: Could know but don't (hidden information)
-- Different strategies for each
-- **Example**: Weather (aleatory) vs competitor plans (epistemic)
+<a id="card-5"></a>
+## Ergodicity
 
-### 3. Known Knowns Matrix (Rumsfeld)
-**Principle**: Four quadrants of knowledge.
-- Known knowns: What we know we know
-- Known unknowns: What we know we don't know
-- Unknown knowns: Tacit knowledge
-- Unknown unknowns: What we don't know we don't know
-- **Example**: The dangerous quadrant is unknown unknowns
+**性質：正式。** 問同時跨很多個體的平均，能否代表同一個體長期的平均；明確指定過程與平均的量。
 
-### 4. Calibrated Uncertainty
-**Principle**: Confidence should match accuracy.
-- 90% confidence should be right 90% of the time
-- Most people are overconfident
-- Trainable through feedback
-- **Example**: Use wide confidence intervals until calibrated
+**適用限制：** 時間與群體平均相等有條件；一次性期望與持續承受損失不同。避免以俄羅斯輪盤有好平均的比喻掩蓋損失定義。
 
-### 5. Ergodicity
-**Principle**: Time average may differ from ensemble average.
-- Ensemble: average across many people at one time
-- Time: one person's average over time
-- Russian roulette: good ensemble average, bad time average
-- **Example**: Repeated gambles where ruin is possible
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
----
+<a id="card-6"></a>
+## Fragile、Robust、Antifragile、Via Negativa
 
-## Fragility Spectrum
+**性質：啟發法。** 對明確擾動比較受損、維持功能或受益；檢查能否刪除脆弱環節，讓小錯誤帶來可吸收的學習。
 
-### 6. Fragile
-**Principle**: Harmed by volatility, randomness, and stressors.
-- Prefers calm, predictable environments
-- Breaks under stress
-- **Examples**: Porcelain, highly leveraged positions, overoptimized systems
+**適用限制：** 抗脆弱需指定結果函式與擾動範圍；波動受益不等於任何壓力都好，備援或分散也不保證不受損。
 
-### 7. Robust
-**Principle**: Resists volatility; neither helped nor harmed.
-- Survives stress unchanged
-- Defensive posture
-- **Examples**: Stone, diversified portfolio, redundant systems
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 8. Antifragile (Taleb)
-**Principle**: Gains from disorder, volatility, and stressors.
-- Gets stronger under stress (up to a point)
-- Thrives in uncertainty
-- **Examples**: Muscles (from exercise), evolution, small failures building immunity
-- **Key insight**: Some things need randomness to thrive
+<a id="card-9"></a>
+## Hormesis：僅供辨識的已移除建議
 
-### 9. Hormesis
-**Principle**: Small doses of harm are beneficial.
-- Vaccines, exercise, fasting
-- Dose matters: too much is toxic
-- **Example**: Cold showers, intermittent fasting
+**性質：實證。** 舊版用低劑量刺激可能產生不同於高劑量的反應，推導健康建議；本包不再提供此類操作規則。
 
-### 10. Via Negativa
-**Principle**: Improve by removing, not adding.
-- Less is more
-- Remove fragilities rather than add features
-- **Example**: Health through not smoking > health through supplements
+**適用限制：** 劑量、物質、受試者與終點高度特定，不能推導冷水澡、斷食或疫苗皆遵循同一機制。醫療用途需另外查原研究。
 
----
+來源／查核狀態：[UNVERIFIED](sources.md#unverified)。
 
-## Tail Risk & Black Swans
+<a id="card-11"></a>
+## 尾風險與模型外事件
 
-### 11. Black Swans
-**Principle**: Rare, high-impact events that are unpredictable but retrospectively "obvious."
-- Not in the model until they happen
-- Carry most of the impact in certain domains
-- **Example**: 2008 financial crisis, COVID-19, internet
+**性質：啟發法。** Black Swans／Turkey Problem 提醒模型可能漏掉結構轉折；Ludic Fallacy 檢查是否把真實環境當固定規則遊戲。Fat Tails 的統計定義見統計參考。
 
-### 12. Fat Tails vs Thin Tails
-**Principle**: How extreme are the extremes?
-- **Thin tails** (Gaussian): Extremes are limited (height, weight)
-- **Fat tails** (Power law): Extremes dominate (wealth, book sales, casualties)
-- Don't use thin-tail statistics for fat-tail phenomena
-- **Example**: Average book sales meaningless; bestsellers dominate
+**適用限制：** Black swan 取決於觀察者資訊，不能把所有重大事件或已可預見風險稱為黑天鵝；Extremistan／Mediocristan 是比喻，不是二分所有資料的定理。
 
-### 13. Ludic Fallacy
-**Principle**: Confusing real-world uncertainty with game-like risk.
-- Games have known rules and probabilities
-- Real world has unknown unknowns
-- **Example**: Treating market risk like casino risk
+來源／查核狀態：[POWERLAW](sources.md#powerlaw)。
 
-### 14. Turkey Problem
-**Principle**: Past performance doesn't predict paradigm shifts.
-- Turkey fed 1000 days → "evidence" of safety → day 1001 is Thanksgiving
-- Model built on past data misses structural breaks
-- **Example**: Banks "safe" until 2008
+<a id="card-16"></a>
+## 預防、緩衝與備援
 
-### 15. Extremistan vs Mediocristan
-**Principle**: Domains where extremes dominate vs where they don't.
-- **Mediocristan**: Physical quantities, normal distribution, average matters
-- **Extremistan**: Information, wealth, winner-take-all, average meaningless
-- **Example**: Height (Mediocristan) vs wealth (Extremistan)
+**性質：啟發法。** Precautionary Principle 比較可能不可逆的系統損害與預防行動的代價；Margin of Safety 用估計誤差設緩衝；Redundancy 找共同失效點。
 
-### 16. Precautionary Principle
-**Principle**: For irreversible, systemic risks, act despite uncertainty.
-- When stakes are ruin, evidence standards differ
-- Burden of proof on those creating risk
-- **Example**: Nuclear weapons, GMOs in ecosystem, AI safety
+**適用限制：** 沒有通用兩倍安全係數；規格需隨工程／制度而定。預防本身有成本與風險，備援也可能共用單點。
 
----
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-## Risk Management
+<a id="card-18"></a>
+## 曝險、選擇權與小型實驗
 
-### 17. Margin of Safety
-**Principle**: Build buffers between estimates and requirements.
-- Engineers: design for 2x expected load
-- Investors: buy at discount to estimated value
-- **Example**: Bridge rated for 10 tons, trucks limited to 5
+**性質：啟發法。** Barbell、Position Sizing、Asymmetric Payoffs、Small Bets、Reversibility Premium 都先問：最壞損失能否承受？成本是否真封頂？何時能撤回或擴大？
 
-### 18. Barbell Strategy
-**Principle**: Combine very safe with very speculative; avoid middle.
-- 90% in ultra-safe (cash, treasuries)
-- 10% in high-risk/high-reward (startups, options)
-- Middle-risk has hidden fragility
-- **Example**: Career: stable income + side ventures
+**適用限制：** 沒有通用配置比例；小賭注若相關仍可累積大損失。Kelly 需明確機率、賠率及成長目標，本次刪除不完整的 edge／odds 公式；買選擇權也非都無限上行。
 
-### 19. Redundancy
-**Principle**: Duplicate critical components.
-- Backup systems, multiple suppliers
-- Costly in normal times, invaluable in crisis
-- Nature uses redundancy extensively
-- **Example**: Two kidneys, multiple power sources
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
 
-### 20. Position Sizing
-**Principle**: Never bet so much that ruin is possible.
-- Survival first, optimization second
-- Kelly criterion: optimal bet size = edge / odds
-- Be more conservative than Kelly suggests
-- **Example**: Never invest money you can't afford to lose
+<a id="card-22"></a>
+## 誘因一致與壓力依存性
 
-### 21. Asymmetric Payoffs
-**Principle**: Seek situations where upside >> downside.
-- Limited downside, unlimited upside
-- Option-like payoffs
-- **Example**: Buying options (lose premium max, unlimited gain)
+**性質：啟發法。** Skin in the Game 檢查決策者承擔的後果；Correlation in Crisis 檢查壓力情境是否使原本不同曝險同受一個因子影響。
 
-### 22. Skin in the Game
-**Principle**: Decision-makers should bear consequences.
-- Aligns incentives
-- Filters out empty talk
-- **Example**: Surgeons shouldn't just recommend; investors should own stock
+**適用限制：** 利益一致不保證專業或誠實；危機相關性可能改變但非所有資產必一起下跌，正常時相關低也非危機避險證據。
 
-### 23. Small Bets
-**Principle**: Many small experiments beat few large ones.
-- Learn from failures without ruin
-- Optionality: can scale winners
-- **Example**: Venture portfolio, product experiments
-
-### 24. Reversibility Premium
-**Principle**: Pay more for reversible decisions.
-- Irreversible decisions need higher confidence
-- Two-way doors: decide quickly, iterate
-- One-way doors: proceed carefully
-- **Example**: Renting vs buying, dating vs marriage
-
-### 25. Correlation in Crisis
-**Principle**: Assets become correlated during stress.
-- Diversification works in normal times
-- Everything sells together in crisis
-- Need truly uncorrelated hedges
-- **Example**: 2008: all "diversified" assets fell together
-
----
-
-## Quick Reference: Risk Framework
-
-| Domain | Key Models |
-|--------|------------|
-| Understanding risk type | Risk vs Uncertainty, Thin vs Fat Tails |
-| Building resilience | Antifragility, Redundancy, Margin of Safety |
-| Portfolio construction | Barbell, Position Sizing, Small Bets |
-| Black Swan preparation | Turkey Problem, Precautionary Principle |
-| Aligning incentives | Skin in the Game, Asymmetric Payoffs |
-| Navigating uncertainty | Via Negativa, Reversibility Premium |
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。

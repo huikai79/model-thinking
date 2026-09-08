@@ -1,117 +1,61 @@
-# Multi-Model Combinations
+# 組合觀點與跨域類比
 
-Strategies and examples for combining mental models across domains to triangulate on complex problems.
+這些是本包自行撰寫的示例，不是發生過的研究或企業案例。以下每個情境只把「已知」當事實；其餘是候選解釋、明示假設或待查資訊。
 
-## Contents
-- [Combination Principles](#combination-principles)
-- [Scenario 1: Product Launch Decision](#scenario-1-product-launch-decision)
-- [Scenario 2: Organizational Dysfunction Diagnosis](#scenario-2-organizational-dysfunction-diagnosis)
-- [Scenario 3: Personal Investment Strategy](#scenario-3-personal-investment-strategy)
-- [Scenario 4: Hiring a Key Role](#scenario-4-hiring-a-key-role)
-- [Scenario 5: Entering a New Market](#scenario-5-entering-a-new-market)
-- [Cross-Domain Pairing Matrix](#cross-domain-pairing-matrix)
+## 何時增加觀點
 
----
+先用最貼近問題的工具；只有下一個工具會增加不同解釋、可行選項、價值取捨或驗證方法時才加入。兩個同領域工具可能互補，跨領域工具也可能只是重複同一假設。
 
-## Combination Principles
+每個新觀點都問：依賴哪份資料？有哪些共用前提？能提出什麼不同預測？若都依賴「需求強」的猜測，三個框架同意也只有一個未驗假設。觀點不同則追查是假設、目標或證據不同，不必硬合成單一答案。
 
-### Why Combine Models?
+跨域類比明示「來源機制 → 目標機制」與失效差異。例如快取的近期存取可類比常用資料放手邊；若目標工作需長期保存且取用規律不同，LRU 的效率不直接轉移。框架與類比的查核邊界見 [來源與取捨](sources.md)。
 
-Single models reveal one dimension. Combining 2-3 models from **different domains** creates depth:
+## 新產品上線
 
-- **Agreement across models** → High confidence in the conclusion
-- **Disagreement across models** → Hidden complexity worth exploring before deciding
-- **Blind spots revealed** → Each model's weakness is covered by another's strength
+**已知：** 公司考慮本季推出面向中小企業的新 SaaS 產品。
 
-### Selection Heuristic
+- Pre-Mortem 提出通路不合、支援超載等失敗假說；先看試用轉換、支援負載與客戶回饋是否支持。
+- Opportunity Cost 讓另一個選項浮現：同樣資源用在既有產品，可能帶來更高收益；目前沒有流失率或收益數字可比較。
+- 如果早期品質影響口碑，再評估口碑與採用間的回饋；這條鏈是否存在仍待查。
 
-1. Pick a **primary model** that matches the core problem type
-2. Add a **complementary model** from a different domain for a second angle
-3. Add a **check model** to stress-test the conclusion (often Inversion or Base Rates)
+**暫定判斷：** 先比較有限推出、延後與投入既有產品。只有試用成果及機會成本支持，才提出全面上線或延期建議；不得自行補流失率。
 
----
+## 團隊反覆延誤
 
-## Scenario 1: Product Launch Decision
+**已知：** 團隊經常未達期限，提問者認為人力充足。
 
-**Problem**: Should we launch a new SaaS product targeting SMBs this quarter?
+候選解釋包括需求持續增加、交接等待、估時口徑失準、技能不匹配與返工。Stocks and Flows 可區分新增工作與完成工作；Incentives 則問是否獎勵樂觀承諾。人力充足也是需界定的判斷。
 
-| Model | Domain | Insight |
-|-------|--------|---------|
-| **Pre-Mortem** (decisions) | Primary | "It's 6 months later and launch failed. Why?" → Team identifies: no channel-market fit, underpriced, support overwhelmed |
-| **Reinforcing Feedback Loops** (systems) | Complementary | Early adopters → reviews → more adopters. But also: early bugs → bad reviews → churn spiral. Which loop wins depends on launch quality |
-| **Opportunity Cost** (decisions) | Check | Engineering on new product = not improving core product. Core product churn is 8%/month — could fixing that yield more revenue? |
+**下一步：** 抽取近期工作，分解等待、實作與返工時間，再看承諾如何形成。若等待占主要時間，增加人手未必解決；若確是工作流入超過容量，改善流程也不一定足夠。現在不能判定團隊依賴英雄式加班或制度必有問題。新增瓶頸假說後，逐案檢查它如何影響原方案的作用機制；例如等待是瓶頸，降低流入仍可能有效，不能直接推成原方案全錯。
 
-**Synthesis**: Pre-Mortem reveals execution risks, systems thinking shows the launch is a race between positive and negative feedback loops, and opportunity cost questions whether launching is even the best use of resources right now. **Decision**: Delay launch by one quarter to fix core product churn first, then launch with higher quality to ensure the positive loop dominates.
+## 儲蓄與投資不確定性
 
----
+**已知：** 使用者想了解不確定性下如何思考資產配置。
 
-## Scenario 2: Organizational Dysfunction Diagnosis
+先區分近期支出、可承受損失、負債與長期目標。Margin of Safety 提醒預留緩衝；曝險檢查問不同資產是否受同一因素影響；Option Value 問流動性是否重要。它們都可能依賴同一個現金需求估計，並非獨立證據。
 
-**Problem**: A team consistently misses deadlines despite adequate staffing.
+**條件式結論：** 近期確定要用的資金與可承受長期波動的資金，需要不同安排。資訊不足時不給比例、收益預測或特定商品；Barbell 只是可討論的結構，不能等同通用最佳配置。待查個人期限、實際損失承受能力與當前產品條件。
 
-| Model | Domain | Insight |
-|-------|--------|---------|
-| **Shifting the Burden** (systems) | Primary | Quick fixes (overtime, scope cuts) mask the real issue. Each crisis is "solved" without addressing root cause, making the team dependent on heroics |
-| **Incentives** (economics) | Complementary | What gets rewarded? If shipping fast is rewarded but quality isn't, rational actors will cut corners. If estimates are punished, people pad them |
-| **Hanlon's Razor** (decisions) | Check | Before blaming individuals, consider: are the processes set up to fail? Bad tooling, unclear specs, or unrealistic scoping may be the true cause |
+## 招聘技術主管
 
-**Synthesis**: Systems view shows a dependency on heroic fixes. Economic lens reveals misaligned incentives. Hanlon's Razor shifts blame from people to process. **Recommendation**: Restructure incentives to reward realistic estimation and process improvement, not just delivery speed.
+**已知：** 有兩位強候選人，其他資料未提供。
 
----
+先定義角色所需成果，並用相同工作樣本及結構化問題比較。Second-Order Thinking 可提醒觀察知識移轉與團隊依賴；Circle of Competence 則界定哪些能力需另一位評估者。
 
-## Scenario 3: Personal Investment Strategy
+**界線：** 不自行寫成 A 技術強但不會帶人、B 擅長指導。技術強與培育團隊可以兼具。招聘的撤回成本依角色、制度與時程而變，不是固定的一向門。
 
-**Problem**: How should I allocate savings across assets given economic uncertainty?
+**下一步：** 用相同情境請兩人示範如何處理技術決策與培育成員，再根據角色需求比較；目前不能選 A 或 B。
 
-| Model | Domain | Insight |
-|-------|--------|---------|
-| **Margin of Safety** (risk) | Primary | Never invest where a single wrong assumption wipes you out. Build buffers: emergency fund first, then diversify |
-| **Barbell Strategy** (risk) | Complementary | 85-90% in extremely safe assets (bonds, cash) + 10-15% in high-upside bets (startups, crypto). Avoid the mushy middle |
-| **Base Rates** (statistics) | Check | Historically, diversified index funds return ~7-10% annually. Most active strategies underperform this baseline. Am I likely to beat it? |
+## 進入新市場
 
-**Synthesis**: Margin of Safety demands buffers. Barbell gives a concrete structure. Base Rates ground the plan in reality — most people are best served by simple index investing plus a small speculative allocation. **Decision**: 6-month emergency fund → 85% index funds → 15% speculative bets with money you can lose entirely.
+**已知：** 中型 B2B SaaS 公司考慮是否比競爭者更早進入東南亞。
 
----
+First-Mover／Fast-Follower 比較先行資產與教育成本；跨域類比可把分階段試點視為購買資訊與保留選擇。東南亞不是單一制度環境，須先選定國家、客群與產品條件。
 
-## Scenario 4: Hiring a Key Role
+**不同觀點：** 客戶推薦降低獲客成本，未必代表產品對其他客戶變得更有價值，因此不能直接稱網路效應。法規、匯率與政治變動可能造成重大損失，但無資料不能指定其統計分布為厚尾。
 
-**Problem**: Choosing between two strong candidates for engineering lead.
+**下一步：** 比較本地合作、小型直接試點、等待與不進入。先查需求、替代品、合規與退出成本；當試點能產生可轉移資訊且損失可承受時，才支持先小範圍嘗試。
 
-| Model | Domain | Insight |
-|-------|--------|---------|
-| **Reversibility (Two-Way Door)** (decisions) | Primary | Hiring is a one-way door — difficult to undo. This warrants thorough analysis, not speed |
-| **Second-Order Thinking** (decisions) | Complementary | Candidate A: strong technically → team relies on them → single point of failure. Candidate B: strong mentor → team grows → resilience. Second-order favors B |
-| **Circle of Competence** (decisions) | Check | Am I qualified to evaluate deep technical skill? If not, bring in a technical evaluator. Assess candidates within my competence (leadership, culture fit) and delegate the rest |
+## 探索與教學的收尾
 
-**Synthesis**: One-way door nature demands rigor. Second-order analysis favors the candidate who builds team capability, not just personal output. Circle of Competence reminds us to get expert help for areas outside our judgment. **Decision**: Bring in a technical co-evaluator, weight mentorship and team-building ability heavily.
-
----
-
-## Scenario 5: Entering a New Market
-
-**Problem**: Should a Taiwanese water treatment company expand into Southeast Asian semiconductor fabs?
-
-| Model | Domain | Insight |
-|-------|--------|---------|
-| **Game Theory — First Mover** (strategy) | Primary | Few local competitors with ultrapure water expertise. First mover can lock in relationships and set standards. But: first mover also bears education costs |
-| **Network Effects** (networks) | Complementary | Each successful project → reference customer → easier next sale. The network of references compounds. But network is geography-bounded — must build in-region |
-| **Fat Tails** (risk) | Check | Geopolitical risk, currency risk, regulatory shifts are fat-tailed. A single policy change could invalidate the entire investment. Size the bet so ruin is impossible |
-
-**Synthesis**: Strategy says move first. Network effects say each win compounds. Risk analysis says size the bet carefully — don't bet the company. **Decision**: Enter with a joint venture (limits downside) targeting one country first (Vietnam or Malaysia), build reference customers, then expand.
-
----
-
-## Cross-Domain Pairing Matrix
-
-Common high-value model pairings for recurring problem types:
-
-| Problem Type | Model A (Primary) | Model B (Complementary) | Model C (Check) |
-|-------------|-------------------|------------------------|-----------------|
-| Go/No-Go decision | Pre-Mortem | Opportunity Cost | Base Rates |
-| System not working | Feedback Loops | Incentives | Leverage Points |
-| Risk assessment | Fat Tails / Margin of Safety | Second-Order Thinking | Inversion |
-| Competitive move | Game Theory | Network Effects | Circle of Competence |
-| Resource allocation | Opportunity Cost | Explore/Exploit | Satisficing |
-| Behavior change | Incentives | Commitment Devices | Hanlon's Razor |
-| Long-term planning | Regret Minimization | Compounding | Map vs Territory |
-| Negotiation | BATNA | Asymmetric Information | Reciprocity |
+如果使用者只要拓展觀點，交付不同解釋、差異及可區分它們的資訊即可；若要學模型，用明示假設的例子與反例說明。需要做決策時才收斂到有條件建議。所有模式都以新增實質資訊控制篇幅，不用固定模型數量或名稱堆疊。

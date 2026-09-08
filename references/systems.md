@@ -1,208 +1,102 @@
-# Systems Models
+# 系統參考
 
-Mental models for understanding complex, interconnected behavior. Based heavily on Donella Meadows' "Thinking in Systems."
+只讀與問題相關的卡片。正式、實證、啟發法的分類與查核狀態見 [來源紀錄](sources.md)。合併卡片保留不同動作，不代表各概念互為證據。
 
-## Contents
-- [System Structure](#system-structure)
-- [Feedback & Dynamics](#feedback--dynamics)
-- [Emergence & Complexity](#emergence--complexity)
-- [Intervention Points](#intervention-points)
+<a id="card-1"></a>
+## 存量與流量 Stocks and Flows
 
----
+**性質：正式。** 畫出累積量與進出速率：S(t) = S(0) + ∫(流入−流出)dt。離散期間則為期初存量加該期淨流入。
 
-## System Structure
+**適用限制：** 單位與時間窗須一致；人口變化還可能含遷入遷出。存量本身不是出生減死亡。計算先定共同起點 t₀，按各措施的生效時點分段更新存量，再區分「生效後需時」與「從 t₀ 起總時間」；生效時間未知時只做明示假設的條件計算。實際流量、容量上限與預估容量分開；平均餘裕可能吸收波動，不自動等於閒置。
 
-### 1. Stocks and Flows
-**Principle**: Systems have accumulations (stocks) changed by rates (flows).
-- **Stock**: Bathtub water level, bank balance, inventory
-- **Inflow**: Faucet, deposits, production
-- **Outflow**: Drain, withdrawals, sales
-- Stocks change slowly; flows can change quickly
-- **Example**: Population (stock) = births (inflow) - deaths (outflow)
+來源／查核狀態：[MEADOWS](sources.md#meadows)。
 
-### 2. System Boundaries
-**Principle**: What you include in the system determines what you see.
-- Boundaries are mental constructs, not physical
-- Too narrow = miss important connections
-- Too wide = overwhelming complexity
-- **Example**: Treating a company as isolated vs part of an ecosystem
+<a id="card-2"></a>
+## 邊界與層級 System Boundaries、Hierarchy
 
-### 3. Hierarchy and Subsystems
-**Principle**: Complex systems are nested within each other.
-- Cells → organs → organisms → populations
-- Each level has its own purpose
-- Higher levels set constraints; lower levels provide function
-- **Example**: Company (divisions → teams → individuals)
+**性質：正式。** 決定問題納入哪些人、資源與時間尺度，再列跨邊界流動與子系統限制。
 
-### 4. Resilience
-**Principle**: Ability to recover from disturbance.
-- Not the same as stability (resistance to change)
-- Built through diversity, modularity, redundancy
-- Often invisible until tested
-- **Example**: Ecosystem with many species vs monoculture
+**適用限制：** 邊界可有物理依據也可由分析目的設定；層級未必都有共同目的，不能把組織類比到所有系統。
 
----
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-## Feedback & Dynamics
+<a id="card-4"></a>
+## 韌性 Resilience
 
-### 5. Reinforcing Feedback Loops (Positive)
-**Principle**: Change in one direction amplifies itself.
-- Compound growth, viral spread, arms races
-- Leads to exponential behavior (growth or collapse)
-- Requires external limit to stop
-- **Example**: More users → more content → more users (network effect)
+**性質：正式。** 指定擾動範圍，測量核心功能能否維持或恢復，以及恢復時間。
 
-### 6. Balancing Feedback Loops (Negative)
-**Principle**: Change triggers counteracting force toward equilibrium.
-- Thermostats, hunger, market prices
-- Creates stability and goal-seeking behavior
-- Can oscillate if delays exist
-- **Example**: High prices → less demand → prices fall
+**適用限制：** 穩定、抗擾與恢復不是同一指標；多樣性、模組化或備援的效用依失效機制而定。
 
-### 7. Delays
-**Principle**: Time gap between action and consequence.
-- Information delays: knowing vs reacting
-- Material delays: shipping, processing
-- Cause oscillation when feedback is delayed
-- **Example**: Shower temperature overshooting
+來源／查核狀態：[MEADOWS](sources.md#meadows)。
 
-### 8. Dominance Shifting
-**Principle**: Which feedback loop dominates changes over time.
-- Early: reinforcing loop dominates (growth)
-- Later: balancing loop dominates (limits)
-- Transitions can be sudden
-- **Example**: Startup growth slowing as market saturates
+<a id="card-5"></a>
+## 回饋、延遲與振盪 Feedback、Delays、Oscillation
 
-### 9. Oscillation
-**Principle**: Systems overshoot and undershoot around equilibrium.
-- Caused by delays in feedback
-- Worse with longer delays or faster responses
-- **Example**: Business cycles, boom-bust patterns
+**性質：正式。** 找出結果如何回過頭改變原因；強化迴路擴大偏移，平衡迴路抵銷偏移。標延遲與迴路何時占主導。
 
-### 10. Exponential Growth
-**Principle**: Constant percentage increase = explosive absolute increase.
-- **Rule of 72**: Doubling time ≈ 72 / growth rate %
-- Feels linear early, then suddenly overwhelming
-- **Example**: 7% annual growth doubles in ~10 years
+**適用限制：** 正負指作用方向非好壞；強化未必指數成長，負回饋未必穩定，延遲也不必然振盪。需檢查增益、結構及外力。
 
----
+來源／查核狀態：[MEADOWS](sources.md#meadows)。
 
-## Emergence & Complexity
+<a id="card-10"></a>
+## 指數成長 Exponential Growth
 
-### 11. Emergence
-**Principle**: Wholes exhibit properties not present in parts.
-- Consciousness from neurons, traffic from cars
-- Can't be predicted from component analysis alone
-- **Example**: Water's wetness doesn't exist in H or O atoms
+**性質：正式。** 固定比例變化可寫成離散 Sₜ=S₀(1+r)^t；用不同 r 測試結果對成長率的敏感度。
 
-### 12. Non-linearity
-**Principle**: Outputs not proportional to inputs.
-- Small cause → large effect (or vice versa)
-- Thresholds and tipping points
-- **Example**: One more straw breaks the camel's back
+**適用限制：** 固定 r 是假設，有限資源下勿無限外推；倍增近似僅在合適利率範圍有用。
 
-### 13. Chaos and Sensitivity
-**Principle**: Small changes can produce vastly different outcomes.
-- Butterfly effect in weather systems
-- Limits long-term prediction
-- **Example**: Slightly different initial conditions → divergent paths
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 14. Attractors
-**Principle**: States the system tends toward.
-- Point attractor: single equilibrium (pendulum at rest)
-- Limit cycle: periodic oscillation (heartbeat)
-- Strange attractor: chaotic but bounded (weather)
-- **Example**: Organizations settling into routines
+<a id="card-11"></a>
+## 湧現與非線性 Emergence、Non-linearity
 
-### 15. Path Dependence
-**Principle**: History matters; current state depends on past path.
-- Early random events lock in outcomes
-- QWERTY keyboard, VHS vs Betamax
-- **Example**: First mover advantage in standards
+**性質：正式。** 觀察互動是否產生個體層次無法直接描述的模式，或輸入改變與輸出不成比例。
 
-### 16. Self-Organization
-**Principle**: Order emerges without central control.
-- Flocking birds, market prices, Wikipedia
-- Requires simple local rules + interactions
-- **Example**: Ant colonies finding shortest paths
+**適用限制：** 湧現不代表原理上不可預測；非線性不等於混沌。應先定義輸出與可檢驗機制。
 
-### 17. Adaptive Systems
-**Principle**: Systems that learn and evolve.
-- Agents change behavior based on outcomes
-- Creates moving targets for intervention
-- **Example**: Bacteria developing antibiotic resistance
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
----
+<a id="card-13"></a>
+## 混沌與吸引子 Chaos、Attractors
 
-## Intervention Points
+**性質：正式。** 在有動態方程與狀態資料時，檢查初始條件敏感性，以及軌跡趨近的集合。
 
-### 18. Leverage Points (Meadows)
-**Principle**: Places where small interventions yield large effects.
+**適用限制：** 不可僅憑變化大就稱混沌；組織慣例只能是類比，不能據此推導數學上的吸引子。
 
-**From weakest to strongest:**
-12. Constants/parameters (subsidies, taxes)
-11. Buffer sizes (inventories, reserves)
-10. Stock-flow structures (physical infrastructure)
-9. Delays (relative to rate of change)
-8. Balancing feedback strength
-7. Reinforcing feedback gain
-6. Information flows (who knows what)
-5. Rules of the system (incentives, constraints)
-4. Power to add/change rules
-3. Goals of the system
-2. Mindset/paradigm behind goals
-1. Power to transcend paradigms
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-- **Key insight**: Most interventions target weak points (parameters)
-- **Example**: Changing tax rate (weak) vs changing information access (strong)
+<a id="card-15"></a>
+## 路徑依賴、自組織與適應
 
-### 19. Unintended Consequences
-**Principle**: Interventions produce unexpected side effects.
-- Systems adapt and compensate
-- Feedback loops create counter-moves
-- **Example**: Cobra bounty in Delhi increased cobra breeding
+**性質：正式。** Path Dependence 檢查歷史承諾；Self-Organization 找局部規則產生秩序；Adaptive Systems 找參與者因經驗改變規則。
 
-### 20. Policy Resistance
-**Principle**: Systems push back against interventions.
-- Each actor tries to maintain their goals
-- Interventions get diluted or reversed
-- **Example**: Price controls → shortages → black markets → higher prices
+**適用限制：** 這是不同機制，不因同時出現就互證；先行者不必然勝出，有序也不必然有效率。
 
-### 21. Shifting the Burden
-**Principle**: Short-term fixes weaken long-term solutions.
-- Quick fix provides immediate relief
-- Underlying problem worsens
-- Dependency on fix increases
-- **Example**: Painkillers masking injury vs healing
+來源／查核狀態：[FOUNDATION](sources.md#foundation)。
 
-### 22. Fixes That Fail
-**Principle**: Solution creates new problem or worsens original.
-- Delay between action and consequence hides link
-- **Example**: Pesticides kill predators → more pests
+<a id="card-18"></a>
+## 槓桿點 Leverage Points
 
-### 23. Limits to Growth
-**Principle**: Every growing system eventually hits constraints.
-- Physical limits (resources, space)
-- Institutional limits (management capacity)
-- Growth shifts to balancing loop
-- **Example**: S-curves in technology adoption
+**性質：啟發法。** 當只調參數沒用時，考慮流量結構、資訊、規則、目標及觀念。以小規模干預檢查作用方向。
 
-### 24. Tragedy of the Commons
-**Principle**: Shared resources depleted by individual self-interest.
-- Private benefit, shared cost
-- Solutions: privatization, regulation, or norms
-- **Example**: Overfishing, overgrazing, pollution
+**適用限制：** Meadows 的排序是反思邀請而非保證；高層改變未必較便宜有效。其第 4 層是改變／自組織系統結構的能力，不只是改規則。
 
----
+來源／查核狀態：[MEADOWS](sources.md#meadows)。
 
-## System Archetypes Summary
+<a id="card-19"></a>
+## 系統基模：副作用、政策阻力、轉嫁負擔、失效修補、成長限制
 
-| Archetype | Pattern | Intervention |
-|-----------|---------|--------------|
-| Limits to Growth | Growth slows unexpectedly | Find and address the constraint |
-| Shifting the Burden | Quick fixes weaken fundamental solutions | Strengthen long-term solution |
-| Fixes That Fail | Solutions backfire | Anticipate side effects |
-| Tragedy of Commons | Shared resources depleted | Create feedback to users |
-| Escalation | Each side trying to get ahead | Find mutual interest |
-| Success to Successful | Winners keep winning | Provide equal opportunity |
-| Eroding Goals | Standards slip under pressure | Hold the goal constant |
+**性質：啟發法。** 用基模提出競爭假說：干預是否引發抵銷？短期解法是否削弱根本能力？成長遇到何種限制？為每個假說找可觀察徵兆。
+
+**適用限制：** 同一症狀有多種原因；看到加班或成長停滯，不能直接認定基模。移除無可核來源的眼鏡蛇獎金故事。
+
+來源／查核狀態：[EDITORIAL](sources.md#editorial)。
+
+<a id="card-24"></a>
+## 公地與治理 Tragedy of the Commons
+
+**性質：正式。** 分析共享資源的擷取收益、集體成本及監督規則，對照實際治理制度。詳見經濟參考。
+
+**適用限制：** 公地不等於無治理的開放取用；共同治理可能有效，不能推定必然耗竭或只能私有化。
+
+來源／查核狀態：[OSTROM](sources.md#ostrom)。
