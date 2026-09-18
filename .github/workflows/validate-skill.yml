@@ -63,3 +63,6 @@ jobs:
 
           print("Model Thinking skill structure validated.")
           PY
+
+      - name: Validate packaged mirrors
+        run: python scripts/validate_packaging.py
